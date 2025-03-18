@@ -6,8 +6,8 @@
 *  Gabrielly Neu (P.O)
 *  Manuela Castro
 *  Marcelo Oliveira
-*  Pedro
-*  Suzane
+*  Pedro Nunes
+*  Suzane Costa
   
 # 📌 Descrição do Projeto:
 
