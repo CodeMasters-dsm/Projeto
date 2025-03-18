@@ -5,7 +5,7 @@
 *  Eric França (Scrum Master)
 *  Gabrielly Neu (P.O)
 *  Manuela Castro
-*  Marcelo
+*  Marcelo Oliveira
 *  Pedro
 *  Suzane
   
