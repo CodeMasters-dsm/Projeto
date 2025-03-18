@@ -19,4 +19,4 @@ Para estimular o aprendizado prático e a aplicação de conceitos teóricos, a 
 
 ## :pushpin: Tecnologias utilizadas:
  
-![docmreadme PNG](https://user-images.githubusercontent.com/100203503/167860788-72093b39-19bd-40f7-991b-6ef9188128cf.png)
+ (https://user-images.githubusercontent.com/100203503/167860788-72093b39-19bd-40f7-991b-6ef9188128cf.png)
