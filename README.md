@@ -17,6 +17,5 @@ Para estimular o aprendizado prático e a aplicação de conceitos teóricos, a 
 
 ![status](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
-#:pushpin: Tecnologias utilizadas:
- 
-![image](https://github.com/user-attachments/assets/64e2ee2d-6707-4e8b-b654-ee7612ca6eff)
+# 📌 Tecnologias utilizadas:
+![image](https://github.com/user-attachments/assets/8755c047-014f-4575-bd12-767534e1b934)
