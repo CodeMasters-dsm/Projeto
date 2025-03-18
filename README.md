@@ -1,6 +1,6 @@
 <h1 align="center"> Projeto ABP</h1>
 
-## Autores
+# Autores
 
 *  Eric França (Scrum Master)
 *  Gabrielly Neu (P.O)
