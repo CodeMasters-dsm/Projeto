@@ -1,5 +1,10 @@
 # Integrantes
-
+*  Eric França (Scrum Master)
+*  Gabrielly Neu (P.O)
+*  Manuela Castro
+*  Marcelo
+*  Pedro
+*  Suzane
 
 Um parágrafo da descrição do projeto vai aqui
 
