@@ -11,8 +11,9 @@
 | Marcelo Vinicius   | Developer     |  |
 | Suzane Costa       | Developer     |  |
 
+
   
-# 📌 Descrição do Projeto:
+# <p> Descrição do Projeto: </p>
 
 Para estimular o aprendizado prático e a aplicação de conceitos teóricos, a FATEC de Jacareí desafiou os alunos do 1º semestre do curso de Desenvolvimento de Software Multiplataforma a desenvolverem uma aplicação web utilizando práticas modernas de gerenciamento de projetos. A proposta busca proporcionar uma experiência dinâmica, permitindo que os estudantes criem soluções inovadoras enquanto aprimoram suas habilidades no desenvolvimento de software.
 
@@ -26,11 +27,28 @@ Para estimular o aprendizado prático e a aplicação de conceitos teóricos, a 
 
 
 
+## :page_with_curl: Product Backlog
+
+### REQUISITOS FUNCIONAIS
+
+| REQUISITO FUNCIONAL_ID | REQUISITOS                                                                                                 | SPRINTS |
+|------------------------|------------------------------------------------------------------------------------------------------------|---------|
+| RF - 1                 | Fazer a ingestão de dados no sistema a partir de uma fonte tal como um arquivo CSV                         |    |
+| RF - 2                 | (opcional) Fazer o gerenciamento dos dados do sistema (CRUD) através da interface da aplicação, permitindo que a secretaria acadêmica/coordenação altere os dados por meio de uma tela da aplicação |    |
+| RF - 3                 | Garantir que o cadastro ou a ingestão de dados satisfaça as regras básicas de alocação da faculdade (ex.: duas turmas diferentes não podem ser alocadas na mesma sala, e um professor não pode ter duas turmas no mesmo horário) |    |
+| RF - 4                 | Permitir que o sistema exporte relatórios/mapas de ambientes e horários em formato PDF                     |    |
+| RF - 5                 | Permitir consultas no sistema (ex.: por turma, turno, professor, data) para apoiar a gestão da faculdade.  |    |
 
 
-# 📌 Status do Projeto:
+### REQUISITOS NÃO FUNCIONAIS
 
-![status](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+| REQUISITO NÃO_FUNCIONAL_ID | REQUISITOS                                                                                          | SPRINTS     |
+|----------------------------|-----------------------------------------------------------------------------------------------------|-------------|
+| RNF - 1                    | Requisito de interface: exibir um mapa de salas com a opção interativa de clicar e visualizar a situação do ambiente (ex. aulas alocadas ao longo dos turnos do dia) |    |
+| RNF - 2                    | Garantir que o sistema seja responsivo, mantendo um layout consistente em dispositivos móveis e preservando a arquitetura de informação da interface |    |
+
+
+
 
 # 📌 Tecnologias utilizadas:
 ![image](https://github.com/user-attachments/assets/8755c047-014f-4575-bd12-767534e1b934)
