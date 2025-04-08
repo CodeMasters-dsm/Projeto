@@ -11,7 +11,7 @@
 | Marcelo Vinicius   | Developer     |  |
 | Suzane Costa       | Developer     |  |
 
-
+<br>
   
 # <p> Descrição do Projeto: </p>
 
@@ -25,7 +25,7 @@ Para estimular o aprendizado prático e a aplicação de conceitos teóricos, a 
 | 02     | [Sprint 02](#sprint-2) | 16/04/2025  | 15/05/2025  |  ⏳    |
 | 03     | [Sprint 03](#sprint-3) | 16/05/2025  | 11/06/2025  |  ⏳    |
 
-
+<br>
 
 ## :page_with_curl: Product Backlog
 
@@ -47,6 +47,23 @@ Para estimular o aprendizado prático e a aplicação de conceitos teóricos, a 
 | RNF - 1                    | Requisito de interface: exibir um mapa de salas com a opção interativa de clicar e visualizar a situação do ambiente (ex. aulas alocadas ao longo dos turnos do dia) |    |
 | RNF - 2                    | Garantir que o sistema seja responsivo, mantendo um layout consistente em dispositivos móveis e preservando a arquitetura de informação da interface |    |
 
+<br>
+
+## :page_with_curl: USER STORIES
+
+<br>
+
+| ID REFERENCIA | Remetente | Instrução | Finalidade | 
+|---------------|-----------|-----------|------------|
+| RF - 1        | Cliente   | Eu quero fazer a ingestão de dados acadêmicos de um arquivo CSV | Para que eu possa adicionar várias turmas, professores e horários ao sistema de forma eficiente e sem precisar cadastrar manualmente cada entrada |
+| RF - 2        | Cliente   | Eu quero poder adicionar, editar, excluir e visualizar turmas, professores, horários e salas através da interface da aplicação | Para que eu possa facilmente manter e atualizar os dados acadêmicos do sistema |
+| RF - 3        | Cliente   | Eu quero que o sistema valide a alocação de salas e horários de acordo com as regras de conflito | Para que eu possa evitar sobrecarga de salas e horários para os professores |
+| RF - 4        | Cliente   | Eu quero gerar relatórios de alocação de salas e horários em formato PDF | Para que eu possa facilmente compartilhar e imprimir essas informações para análise e tomada de decisões | 
+| RF - 5/RNF - 1| Usuário   | Eu quero fazer consultas e visualizar um mapa interativo das salas de aula | Para que eu possa clicar em cada sala e ver rapidamente a alocação de aulas para cada turno do dia |
+| RNF - 2       | Usuário   | Eu quero que a interface seja responsiva e se ajuste corretamente em dispositivos móveis | Para que eu possa usar a aplicação com a mesma facilidade em qualquer dispositivo |
+
+
+<br>
 
 
 
