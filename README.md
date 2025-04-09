@@ -8,8 +8,7 @@
 | Gabrielly Neu      | Product Owner | [Gabrielly209](https://github.com/Gabrielly209) |
 | Manuela Castro     | Developer     | [manuelalemes](https://github.com/manuelalemes) |
 | Pedro Claudino     | Developer     | [PehSeasmoke](https://github.com/PehSeasmoke) |
-| Marcelo Vinicius   | Developer     |  |
-| Suzane Costa       | Developer     |  |
+| Marcelo Vinicius   | Developer     | [marcelovmr](https://github.com/marcelovmr) |
 
 <br>
   
