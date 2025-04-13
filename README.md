@@ -40,7 +40,7 @@ Clique [aqui](https://trello.com/invite/b/67e1e9ab2a6046abcba03900/ATTI50b8625e8
 
 | REQUISITO FUNCIONAL_ID | REQUISITOS                                                                                                 | SPRINTS |
 |------------------------|------------------------------------------------------------------------------------------------------------|---------|
-| RF - 1                 | Fazer a ingestão de dados no sistema a partir de uma fonte tal como um arquivo CSV                         | #2   |
+| RF - 1                 | Fazer a ingestão de dados no sistema a partir de uma fonte tal como um arquivo CSV                         | #1 #2   |
 | RF - 2                 | (opcional) Fazer o gerenciamento dos dados do sistema (CRUD) através da interface da aplicação, permitindo que a secretaria acadêmica/coordenação altere os dados por meio de uma tela da aplicação |  #3  |
 | RF - 3                 | Garantir que o cadastro ou a ingestão de dados satisfaça as regras básicas de alocação da faculdade (ex.: duas turmas diferentes não podem ser alocadas na mesma sala, e um professor não pode ter duas turmas no mesmo horário) | #2   |
 | RF - 4                 | Permitir que o sistema exporte relatórios/mapas de ambientes e horários em formato PDF                     |  #3  |
@@ -52,7 +52,7 @@ Clique [aqui](https://trello.com/invite/b/67e1e9ab2a6046abcba03900/ATTI50b8625e8
 | REQUISITO NÃO_FUNCIONAL_ID | REQUISITOS                                                                                          | SPRINTS     |
 |----------------------------|-----------------------------------------------------------------------------------------------------|-------------|
 | RNF - 1                    | Requisito de interface: exibir um mapa de salas com a opção interativa de clicar e visualizar a situação do ambiente (ex. aulas alocadas ao longo dos turnos do dia) |  #1  |
-| RNF - 2                    | Garantir que o sistema seja responsivo, mantendo um layout consistente em dispositivos móveis e preservando a arquitetura de informação da interface | #1 #2   |
+| RNF - 2                    | Garantir que o sistema seja responsivo, mantendo um layout consistente em dispositivos móveis e preservando a arquitetura de informação da interface | #1    |
 
 <br>
 
@@ -96,6 +96,44 @@ Definimos por conseguinte os principais elementos do protótipo das páginas atr
 
 ## • Sprint Backlog
 <br>
+
+| ID REFERENCIA |Prioridade  | REQUISITO DA SPRINT| Responsável |TAREFA INICIADA | TAREFA CONCLUIDA | 
+|---------------|------------|--------------------|-------------|----------------|------------------|
+|  RF - 1       | 2 | Estabelecer os elementos essenciais das páginas para o desenvolvimento dos protótipos iniciais | Gabrielly | ✔  | ✔  |
+|  RNF - 2      | 2 | Criar os componentes fundamentais com base no Diagrama de Casos de Uso e Diagrama de Classes criado por meio do Astah UML | Eric e Marcelo | ✔  | ✔  |
+|  RF - 1       | 3 | Realizar uma reunião para fomentar a inspiração e a criatividade em torno do projeto | Eric  | ✔  | ✔  |
+|  RNF - 2      | 1 | Projetar as interfaces no Figma, abrangendo as versões para desktop e mobile | Pedro e Marcelo|  ✔  | ✔  |
+|  RF - 5       | 1 | Levantar as informações essenciais que serão apresentadas no site | Pedro   | ✔  |✔  |
+|  RNF - 2      | 2 | Definir a harmonia visual do protótipo (como a paleta de cores), garantindo uma experiência suave e intuitiva | Manuela |  ✔  | ✔  |
+|  RNF - 1      | 3 | Delimitar as interações e funcionalidades do site por meio do Figma | Manuela  | ✔  | ✔  |
+|  RNF - 1      | 4 | Verificar a fluidez da navegação, assegurando uma experiência de usuário primorosa | Gabrielly |  ✔  | ✔  |
+|  RF - 1       | 4 | Organizar a documentação no GitHub | Eric e Gabrielly |  ✔  | ✔  |
+
+<br>
+<br>
+
+### • Burndown Sprint 1
+<br>
+
+![image](https://github.com/user-attachments/assets/88a8b7e4-4923-45f7-8c7d-af0b240956d5)
+
+<br>
+
+### • Sprint Retrospective 
+<br>
+
+**1. O que funcionou bem durante o sprint?**
+<br>
+
+
+**2. O que não funcionou tão bem durante o sprint?**
+<br>
+
+
+**3. Quais ações podemos tomar para melhorar no próximo sprint?**
+<br>
+
+
 
 
 
