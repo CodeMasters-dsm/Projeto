@@ -1,6 +1,6 @@
 <h1 align="center"> Projeto ABP</h1>
 
-# <p> Equipe: CodeMasters </p>
+## <p> Equipe: CodeMasters </p>
 
 | NOME               | FUNÇÃO        | GITHUB                               |
 |--------------------|---------------|--------------------------------------|
@@ -34,7 +34,7 @@ Clique [aqui](https://trello.com/invite/b/67e1e9ab2a6046abcba03900/ATTI50b8625e8
 
 <br>
 
-## :page_with_curl: Product Backlog
+# :page_with_curl: Product Backlog
 
 ### REQUISITOS FUNCIONAIS
 
@@ -56,7 +56,7 @@ Clique [aqui](https://trello.com/invite/b/67e1e9ab2a6046abcba03900/ATTI50b8625e8
 
 <br>
 
-## :page_with_curl: USER STORIES
+## :file_folder: USER STORIES
 
 <br>
 
@@ -71,19 +71,22 @@ Clique [aqui](https://trello.com/invite/b/67e1e9ab2a6046abcba03900/ATTI50b8625e8
 
 <br>
 
-# <p> 📃 Diagrama de Casos de Uso
+## :file_folder: Diagrama de Casos de Uso
 ![Diagrama de casos de uso](https://github.com/user-attachments/assets/7c67e6e9-33d5-4c83-833a-717d90290547)
 
 <br>
 
-# <p> 📃 Diagrama de Classes
-
+## :file_folder: Diagrama de Classes
+<img width="576" alt="DIAGRAMA_CLASSE_TEAM_CODEMASTERS" src="https://github.com/user-attachments/assets/8d6194b6-1bf6-4902-8af7-fc0bc01988bd" />
 
 <br>
 
 <span id="sprint-1">
+
+<br>
+
  
-## :page_with_curl: SPRINT 1
+# :page_with_curl: SPRINT 1
 <p>No primeiro momento da Primeira Sprint, a Product Owner definiu junto ao cliente os requisitos de que deseja para a conclusão do projeto e para que os Requisitos Funcionais (RF) e Requisitos Não Funcionais (RNF) sejam elaborados de uma melhor maneira.
 Criamos o Backlog List do produto através do Scrum master junto aos outros membros da equipe, e através Backlog List criamos a Backlog da Sprint 1, definindo assim as tarefas de cada membro da equipe nesta etapa.
 Definimos por conseguinte os principais elementos do protótipo das páginas através do Figma. Levantamos ainda, para tal elaboração, o levantamento das informações das quais será exposta no site e elaboração do nosso projeto.
@@ -91,7 +94,7 @@ Definimos por conseguinte os principais elementos do protótipo das páginas atr
 
 <br>
 
-### • Sprint Backlog
+## • Sprint Backlog
 <br>
 
 
