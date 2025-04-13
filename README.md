@@ -20,9 +20,17 @@ Para estimular o aprendizado prático e a aplicação de conceitos teóricos, a 
 
 | Sprint | Link        | Início      | Entrega     | Status |
 |--------|-------------|-------------|-------------|--------|
-| 01     | [Sprint 01](#sprint-1) | 24/03/2025  | 15/04/2025  |  ⏳    |
+| 01     | [Sprint 01](#sprint-1) | 24/03/2025  | 15/04/2025  |  ✔    |
 | 02     | [Sprint 02](#sprint-2) | 16/04/2025  | 15/05/2025  |  ⏳    |
 | 03     | [Sprint 03](#sprint-3) | 16/05/2025  | 11/06/2025  |  ⏳    |
+
+<br>
+
+Clique [aqui](https://trello.com/invite/b/67e1e9ab2a6046abcba03900/ATTI50b8625e86239662e0d7e83dc56f144eBC72E6FE/projeto-abp) para acessar o quadro do Trello.
+
+<br> 
+
+<span id="backlog">
 
 <br>
 
@@ -61,8 +69,38 @@ Para estimular o aprendizado prático e a aplicação de conceitos teóricos, a 
 | RF - 5/RNF - 1| Usuário   | Eu quero fazer consultas e visualizar um mapa interativo das salas de aula | Para que eu possa clicar em cada sala e ver rapidamente a alocação de aulas para cada turno do dia |
 | RNF - 2       | Usuário   | Eu quero que a interface seja responsiva e se ajuste corretamente em dispositivos móveis | Para que eu possa usar a aplicação com a mesma facilidade em qualquer dispositivo |
 
+<br>
+
+# <p> 📃 Diagrama de Casos de Uso
+![Diagrama de casos de uso](https://github.com/user-attachments/assets/7c67e6e9-33d5-4c83-833a-717d90290547)
 
 <br>
+
+# <p> 📃 Diagrama de Classes
+
+
+<br>
+
+<span id="sprint-1">
+ 
+## :page_with_curl: SPRINT 1
+<p>No primeiro momento da Primeira Sprint, a Product Owner definiu junto ao cliente os requisitos de que deseja para a conclusão do projeto e para que os Requisitos Funcionais (RF) e Requisitos Não Funcionais (RNF) sejam elaborados de uma melhor maneira.
+Criamos o Backlog List do produto através do Scrum master junto aos outros membros da equipe, e através Backlog List criamos a Backlog da Sprint 1, definindo assim as tarefas de cada membro da equipe nesta etapa.
+Definimos por conseguinte os principais elementos do protótipo das páginas através do Figma. Levantamos ainda, para tal elaboração, o levantamento das informações das quais será exposta no site e elaboração do nosso projeto.
+</p>
+
+<br>
+
+### • Sprint Backlog
+<br>
+
+
+
+
+
+
+
+
 
 
 
