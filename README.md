@@ -71,7 +71,7 @@ Clique [aqui](https://trello.com/invite/b/67e1e9ab2a6046abcba03900/ATTI50b8625e8
 
 <br>
 
-## :file_folder: Diagrama de Casos de Uso
+## :file_folder: Diagrama Entidade Relacionamento (DER)
 ![Diagrama de casos de uso](https://github.com/user-attachments/assets/7c67e6e9-33d5-4c83-833a-717d90290547)
 
 <br>
