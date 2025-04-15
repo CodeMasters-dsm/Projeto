@@ -131,6 +131,7 @@ Definimos por conseguinte os principais elementos do protótipo das páginas atr
 
 
 **3. Quais ações podemos tomar para melhorar no próximo sprint?**
+  **É possível revisar e otimizar nossas práticas de desenvolvimento, identificando pontos críticos para melhorias e implementando ajustes quando necessário. Podemos, além disso, aumentar o número de reuniões para evitar possíveis desencontros. Ademais, estudar ainda mais os dispositivos que utilizamos no projeto, para termos um resultado final mais impecável.**
 <br>
 
 
