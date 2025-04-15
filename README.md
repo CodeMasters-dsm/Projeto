@@ -123,15 +123,17 @@ Definimos por conseguinte os principais elementos do protótipo das páginas atr
 <br>
 
 **1. O que funcionou bem durante o sprint?**
+<p>Durante a primeira Sprint, diversos aspectos funcionaram muito bem. Um destaque foi a colaboração da equipe — todos demonstraram comprometimento e trabalharam de maneira alinhada, o que nos permitiu atingir as metas dentro do prazo. A comunicação teve uma melhora notável, assim como a distribuição das tarefas: cada integrante ficou responsável por uma parte específica, mas todas as entregas passaram pela aprovação coletiva. Isso evitou desencontros e garantiu que todos estivessem cientes do andamento do projeto. Além disso, a evolução de aprendizado de todos os membros foi notável, com poucas pessoas, todas precisaram estudar todos os temas para ter um mínimo técnico sobre os assuntos e contribuir para a aprovação final.</p>
 <br>
 
 
 **2. O que não funcionou tão bem durante o sprint?**
+<p>Ao longo da primeira Sprint, surgiram desafios e imprevistos, como a saída repentina de um integrante da equipe, onde um grupo já reduzido, ficou ainda menor. Essa situação exigiu uma reestruturação ágil e eficiente para assegurar a continuidade do projeto e o cumprimento dos prazos estabelecidos. Além disso, como no grupo não havia membro com antecedência na área, o início foi conturbado até o momento que conseguimos realinhas melhor as ideias e objetivos.</p>
 <br>
 
 
 **3. Quais ações podemos tomar para melhorar no próximo sprint?**
-  <p>**É possível revisar e otimizar nossas práticas de desenvolvimento, identificando pontos críticos para melhorias e implementando ajustes quando necessário. Podemos, além disso, aumentar o número de reuniões para evitar possíveis desencontros. Ademais, estudar ainda mais os dispositivos que utilizamos no projeto, para termos um resultado final mais impecável.**</p>
+  <p>É possível revisar e otimizar nossas práticas de desenvolvimento, identificando pontos críticos para melhorias e implementando ajustes quando necessário. Podemos, além disso, aumentar o número de reuniões para evitar possíveis desencontros. Ademais, estudar ainda mais os dispositivos que utilizamos no projeto, para termos um resultado final mais impecável.</p>
 <br>
 
 
