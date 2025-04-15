@@ -71,12 +71,12 @@ Clique [aqui](https://trello.com/invite/b/67e1e9ab2a6046abcba03900/ATTI50b8625e8
 
 <br>
 
-## :file_folder: Diagrama Entidade Relacionamento (DER)
+## :file_folder: Diagrama de Casos de Usos
 ![Diagrama de casos de uso](https://github.com/user-attachments/assets/7c67e6e9-33d5-4c83-833a-717d90290547)
 
 <br>
 
-## :file_folder: Diagrama de Classes
+## :file_folder: Diagrama Entidade Relacionamento (DER)
 <img width="576" alt="DIAGRAMA_CLASSE_TEAM_CODEMASTERS" src="https://github.com/user-attachments/assets/8d6194b6-1bf6-4902-8af7-fc0bc01988bd" />
 
 <br>
