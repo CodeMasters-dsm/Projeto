@@ -149,4 +149,4 @@ Definimos por conseguinte os principais elementos do protótipo das páginas atr
 
 
 # 📌 Tecnologias utilizadas:
-![image](https://github.com/user-attachments/assets/8755c047-014f-4575-bd12-767534e1b934
+![image](https://github.com/user-attachments/assets/8755c047-014f-4575-bd12-767534e1b934).
