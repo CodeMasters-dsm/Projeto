@@ -4,9 +4,9 @@
 
 | NOME               | FUNÇÃO        | GITHUB                               |
 |--------------------|---------------|--------------------------------------|
-| Eric França        | Scrum Master  | [Ericfranca90](https://github.com/Ericfranca90) |
+| Manuela Castro     | Scrum Master  | [manuelalemes](https://github.com/manuelalemes) |
 | Gabrielly Neu      | Product Owner | [Gabrielly209](https://github.com/Gabrielly209) |
-| Manuela Castro     | Developer     | [manuelalemes](https://github.com/manuelalemes) |
+| Eric França        | Developer     | [Ericfranca90](https://github.com/Ericfranca90) |
 | Pedro Claudino     | Developer     | [PehSeasmoke](https://github.com/PehSeasmoke) |
 | Marcelo Vinicius   | Developer     | [marcelovmr](https://github.com/marcelovmr) |
 
@@ -87,8 +87,8 @@ Clique [aqui](https://trello.com/invite/b/67e1e9ab2a6046abcba03900/ATTI50b8625e8
 
  
 # :page_with_curl: SPRINT 1
-<p>No primeiro momento da Primeira Sprint, a Product Owner definiu junto ao cliente os requisitos de que deseja para a conclusão do projeto e para que os Requisitos Funcionais (RF) e Requisitos Não Funcionais (RNF) sejam elaborados de uma melhor maneira.
-Criamos o Backlog List do produto através do Scrum master junto aos outros membros da equipe, e através Backlog List criamos a Backlog da Sprint 1, definindo assim as tarefas de cada membro da equipe nesta etapa.
+<p>No primeiro momento da Primeira Sprint, o Product Owner definiu junto ao cliente os requisitos de que deseja para a conclusão do projeto e para que os Requisitos Funcionais (RF) e Requisitos Não Funcionais (RNF) sejam elaborados de uma melhor maneira.
+Criamos o Backlog List do produto através do Scrum Master junto aos outros membros da equipe, e através Backlog List criamos a Backlog da Sprint 1, definindo assim as tarefas de cada membro da equipe nesta etapa.
 Definimos por conseguinte os principais elementos do protótipo das páginas através do Figma. Levantamos ainda, para tal elaboração, o levantamento das informações das quais será exposta no site e elaboração do nosso projeto.
 </p>
 
