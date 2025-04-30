@@ -172,6 +172,7 @@ Definimos por conseguinte os principais elementos do protótipo das páginas atr
     title="JavaScript"
     width="30px" 
     style="padding-right: 10px;" 
-    src="![image](https://github.com/user-attachments/assets/72b7ce3a-abac-4c18-b832-00d39eb7799e)" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" 
+/>
 
 
