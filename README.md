@@ -149,7 +149,7 @@ Definimos por conseguinte os principais elementos do protótipo das páginas atr
 
 
 
-# 📌 Tecnologias utilizadas:
+# 🤖 Tecnologias utilizadas:
 <img 
     align="left" 
     alt="HTML"
@@ -173,6 +173,22 @@ Definimos por conseguinte os principais elementos do protótipo das páginas atr
     width="30px" 
     style="padding-right: 10px;" 
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="JavaScript" 
+    title="JavaScript"
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/trello/trello-original.svg"          
+/>
+<img 
+    align="left" 
+    alt="JavaScript" 
+    title="JavaScript"
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"         
 />
 
 
