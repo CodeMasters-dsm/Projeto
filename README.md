@@ -149,7 +149,7 @@ Definimos por conseguinte os principais elementos do protótipo das páginas atr
 
 
 
-# 🤖 Tecnologias utilizadas:
+# 🤖 Linguagens e Ferramentas:
 <img 
     align="left" 
     alt="HTML"
