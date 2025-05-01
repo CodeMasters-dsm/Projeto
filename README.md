@@ -189,7 +189,8 @@ Definimos por conseguinte os principais elementos do protótipo das páginas atr
     width="30px" 
     style="padding-right: 10px;" 
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
-/>         
+/>
+
 <img 
     align="left" 
     alt="PostgreSQL" 
