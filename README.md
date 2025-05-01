@@ -176,6 +176,14 @@ Definimos por conseguinte os principais elementos do protótipo das páginas atr
 />
 <img 
     align="left" 
+    alt="PostgreSQL" 
+    title="PostgreSQL"
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain-wordmark.svg"
+/>
+<img 
+    align="left" 
     alt="Trello" 
     title="Trello"
     width="30px" 
