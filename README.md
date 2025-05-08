@@ -155,9 +155,9 @@ Foi decidido construir os principais elementos do protótipo das páginas atrav�
 | RNF - 1\RNF - 2 | 7 | Criar a versão em desktop da página de login utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Eric  | ✔  | ✔  |
 | RNF - 1\RNF - 2 | 7 | Criar a versão em mobile da página de login utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Eric |  ✔  | ✔  |
 |  RF - 1     | 4 | Criar Modelo Relacional do Banco de Dados no DB Designer | Marcelo   | ✔  |✔  |
-|  RF - 1     | 8 | Inserção de informações no banco de dados com o uso de tabelas no PgAdmin | Gabrielly e Marcelo |  ✔  | ⏳  |
+|  RF - 1     | 8 | Inserção de informações no banco de dados com o uso de tabelas no PgAdmin | Gabrielly |  ✔  | ⏳  |
 |      -  | 6 | Definição de linguagens e ferramentas usadas no backend | Manuela  | ✔  | ✔  |
-|  RF - 3    | 10 | Estabelecer conexão entre o banco de dados e o backend usando Node.js | Gabrielly |  ✔  | ⏳  |
+|  RF - 3    | 10 | Estabelecer conexão entre o banco de dados e o backend usando Node.js | Gabrielly e Marcelo |  ✔  | ⏳  |
 |  RF - 2      | 10 | Implementar um recurso completo com CRUD | Manuela  | ✔  | ⏳  |
 | RF - 2\RF - 3 | 6 | Testar rotas manualmente usando Postman | Gabrielly |  ✔  | ⏳  |
 | -  | 4 | Organizar a documentação no GitHub | Manuela e Gabrielly |  ✔  | ⏳  |
