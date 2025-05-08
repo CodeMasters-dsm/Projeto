@@ -137,6 +137,8 @@ Foi decidido construir os principais elementos do protótipo das páginas atrav�
   <p>É possível revisar e otimizar nossas práticas de desenvolvimento, identificando pontos críticos para melhorias e implementando ajustes quando necessário. Podemos, além disso, aumentar o número de reuniões para evitar possíveis desencontros. Ademais, estudar ainda mais os dispositivos que utilizamos no projeto, para termos um resultado final mais impecável.</p>
 <br>
 
+<span id="sprint-2">
+  
 <br>
 
 # :page_with_curl: SPRINT 2
