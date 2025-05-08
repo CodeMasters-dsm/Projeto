@@ -89,8 +89,8 @@ Clique [aqui](https://trello.com/invite/b/67e1e9ab2a6046abcba03900/ATTI50b8625e8
  
 # :page_with_curl: SPRINT 1
 <p>No primeiro momento da Primeira Sprint, o Product Owner definiu junto ao cliente os requisitos de que deseja para a conclusão do projeto e para que os Requisitos Funcionais (RF) e Requisitos Não Funcionais (RNF) sejam elaborados de uma melhor maneira.
-Criamos o Backlog List do produto através do Scrum Master junto aos outros membros da equipe, e através Backlog List criamos a Backlog da Sprint 1, definindo assim as tarefas de cada membro da equipe nesta etapa.
-Definimos por conseguinte os principais elementos do protótipo das páginas através do Figma. Levantamos ainda, para tal elaboração, o levantamento das informações das quais será exposta no site e elaboração do nosso projeto.
+Criamos o Backlog List do produto através do Scrum Master junto aos outros membros da equipe, e através disso criamos a Backlog da Sprint 1, definindo assim as tarefas de cada membro da equipe nesta etapa.
+Foi decidido construir os principais elementos do protótipo das páginas através do Figma e fazer o levantamento das informações das quais será exposta no site e elaboração do nosso projeto.
 </p>
 
 <br>
@@ -108,7 +108,7 @@ Definimos por conseguinte os principais elementos do protótipo das páginas atr
 |  RNF - 2      | 2 | Definir a harmonia visual do protótipo (como a paleta de cores), garantindo uma experiência suave e intuitiva | Manuela |  ✔  | ✔  |
 |  RNF - 1      | 3 | Delimitar as interações e funcionalidades do site por meio do Figma | Manuela  | ✔  | ✔  |
 |  RNF - 1      | 4 | Verificar a fluidez da navegação, assegurando uma experiência de usuário primorosa | Gabrielly |  ✔  | ✔  |
-|  RF - 1       | 4 | Organizar a documentação no GitHub | Eric e Gabrielly |  ✔  | ✔  |
+|  -       | 4 | Organizar a documentação no GitHub | Eric e Gabrielly |  ✔  | ✔  |
 
 <br>
 <br>
@@ -124,12 +124,12 @@ Definimos por conseguinte os principais elementos do protótipo das páginas atr
 <br>
 
 **1. O que funcionou bem durante o sprint?**
-<p>Durante a primeira Sprint, diversos aspectos funcionaram muito bem. Um destaque foi a colaboração da equipe — todos demonstraram comprometimento e trabalharam de maneira alinhada, o que nos permitiu atingir as metas dentro do prazo. A comunicação teve uma melhora notável, assim como a distribuição das tarefas: cada integrante ficou responsável por uma parte específica, mas todas as entregas passaram pela aprovação coletiva. Isso evitou desencontros e garantiu que todos estivessem cientes do andamento do projeto. Além disso, a evolução de aprendizado de todos os membros foi notável, com poucas pessoas, todas precisaram estudar todos os temas para ter um mínimo técnico sobre os assuntos e contribuir para a aprovação final.</p>
+<p>Durante a primeira Sprint, diversos aspectos funcionaram muito bem. Um destaque foi a colaboração da equipe — todos demonstraram comprometimento e trabalharam de maneira alinhada, o que nos permitiu atingir as metas dentro do prazo. A comunicação teve uma melhora notável, assim como a distribuição das tarefas: cada integrante ficou responsável por uma parte específica, mas todas as entregas passaram pela aprovação coletiva. Isso evitou desencontros e garantiu que todos estivessem cientes do andamento do projeto.</p>
 <br>
 
 
 **2. O que não funcionou tão bem durante o sprint?**
-<p>Ao longo da primeira Sprint, surgiram desafios e imprevistos, como a saída repentina de um integrante da equipe, onde um grupo já reduzido, ficou ainda menor. Essa situação exigiu uma reestruturação ágil e eficiente para assegurar a continuidade do projeto e o cumprimento dos prazos estabelecidos. Além disso, como no grupo não havia membro com antecedência na área, o início foi conturbado até o momento que conseguimos realinhas melhor as ideias e objetivos.</p>
+<p>Ao longo da primeira Sprint, surgiram desafios e imprevistos, como a saída repentina de um integrante da equipe. Essa situação exigiu uma reestruturação ágil e eficiente para assegurar a continuidade do projeto e o cumprimento dos prazos estabelecidos. Além disso, como no grupo não havia membro com antecedência na área, o início foi conturbado até o momento que conseguimos realinhar melhor as ideias e objetivos.</p>
 <br>
 
 
@@ -137,7 +137,54 @@ Definimos por conseguinte os principais elementos do protótipo das páginas atr
   <p>É possível revisar e otimizar nossas práticas de desenvolvimento, identificando pontos críticos para melhorias e implementando ajustes quando necessário. Podemos, além disso, aumentar o número de reuniões para evitar possíveis desencontros. Ademais, estudar ainda mais os dispositivos que utilizamos no projeto, para termos um resultado final mais impecável.</p>
 <br>
 
+<br>
+# :page_with_curl: SPRINT 2
+<p>Na Segunda Sprint, o Product Owner e o Scrum Master se reuniram para alinhar as melhores estratégias e definir o que será apresentado nesta fase. Essa conversa foi fundamental para garantir que nossos esforços estejam bem direcionados e que possamos entregar o máximo de valor. Foi definido, junto com a equipe, construir as páginas iniciais e de login usando HTML e CSS, iniciar a inserção de informações no banco de dados e garantir a conexão entre banco de dados e backend do nosso projeto.
+</p>
 
+<br>
+
+## • Sprint Backlog
+<br>
+
+| ID REFERENCIA |Prioridade  | REQUISITO DA SPRINT| Responsável |TAREFA INICIADA | TAREFA CONCLUIDA | 
+|---------------|------------|--------------------|-------------|----------------|------------------|
+| RNF - 1\RNF - 2 | 7 | Criar a versão em desktop da página inicial utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Pedro | ✔  | ⏳  |
+| RNF - 1\RNF - 2 | 7 | Criar a versão em mobile da página inicial utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Pedro | ✔  | ⏳  |
+| RNF - 1\RNF - 2 | 7 | Criar a versão em desktop da página de login utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Eric  | ✔  | ✔  |
+| RNF - 1\RNF - 2 | 7 | Criar a versão em mobile da página de login utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Eric |  ✔  | ✔  |
+|  RF - 1     | 4 | Criar Modelo Relacional do Banco de Dados no DB Designer | Marcelo   | ✔  |✔  |
+|  RF - 1     | 8 | Inserção de informações no banco de dados com o uso de tabelas no PgAdmin | Gabrielly e Marcelo |  ✔  | ⏳  |
+|      -  | 6 | Definição de linguagens e ferramentas usadas no backend | Manuela  | ✔  | ✔  |
+|  RF - 3    | 10 | Estabelecer conexão entre o banco de dados e o backend usando Node.js | Gabrielly |  ✔  | ⏳  |
+|  RF - 2      | 10 | Implementar um recurso completo com CRUD | Manuela  | ✔  | ⏳  |
+| RF - 2\RF - 3 | 6 | Testar rotas manualmente usando Postman | Gabrielly |  ✔  | ⏳  |
+| -  | 4 | Organizar a documentação no GitHub | Manuela e Gabrielly |  ✔  | ⏳  |
+
+<br>
+<br>
+
+### • Burndown Sprint 1
+<br>
+📉
+<br>
+
+### • Sprint Retrospective 
+<br>
+
+**1. O que funcionou bem durante o sprint?**
+<p>...</p>
+<br>
+
+
+**2. O que não funcionou tão bem durante o sprint?**
+<p>...</p>
+<br>
+
+
+**3. Quais ações podemos tomar para melhorar no próximo sprint?**
+  <p>...</p>
+<br>
 
 
 
