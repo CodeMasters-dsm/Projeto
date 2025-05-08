@@ -138,6 +138,7 @@ Foi decidido construir os principais elementos do protótipo das páginas atrav�
 <br>
 
 <br>
+
 # :page_with_curl: SPRINT 2
 <p>Na Segunda Sprint, o Product Owner e o Scrum Master se reuniram para alinhar as melhores estratégias e definir o que será apresentado nesta fase. Essa conversa foi fundamental para garantir que nossos esforços estejam bem direcionados e que possamos entregar o máximo de valor. Foi definido, junto com a equipe, construir as páginas iniciais e de login usando HTML e CSS, iniciar a inserção de informações no banco de dados e garantir a conexão entre banco de dados e backend do nosso projeto.
 </p>
