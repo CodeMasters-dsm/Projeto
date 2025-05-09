@@ -72,8 +72,7 @@ Clique [aqui](https://trello.com/invite/b/67e1e9ab2a6046abcba03900/ATTI50b8625e8
 <br>
 
 ## :file_folder: Diagrama de Casos de Usos
-![Diagrama de casos de uso](Diagramas/Diagrama-de-casos-de-uso.png)
-
+<img width="576" alt="DIAGRAMA_DE_CASOS_DE_USO_TEAM_CODEMASTERS" src="![Diagrama de casos de uso](https://github.com/user-attachments/assets/31d915f4-93df-4378-a09e-e5c63ad4abba)" />
 
 <br>
 
@@ -81,6 +80,12 @@ Clique [aqui](https://trello.com/invite/b/67e1e9ab2a6046abcba03900/ATTI50b8625e8
 <img width="576" alt="DIAGRAMA_CLASSE_TEAM_CODEMASTERS" src="https://github.com/user-attachments/assets/8d6194b6-1bf6-4902-8af7-fc0bc01988bd" />
 
 <br>
+
+## :file_folder: Modelo Relacional
+<img width="576" alt="MODELO_RELACIONAL_TEAM_CODEMASTERS" src="![BD_CODEMASTERS](https://github.com/user-attachments/assets/ca877274-de4b-4d43-aeff-1f52179cec92)" />
+
+<br>
+
 
 <span id="sprint-1">
 
