@@ -24,13 +24,6 @@ create table if not exists users (
 	primary key (id_us)
 );
 
-create table if not exists degree (
-	id_de integer not null,
-	name_de VARCHAR(50),
-	period_de VARCHAR(20),
-	primary key (id_de)
-);
-
 create table if not exists professor (
 	id_pr integer not null,
 	name_pr VARCHAR(100),
@@ -66,3 +59,23 @@ create table if not exists room_has_course (
 	foreign key (ro_id) references room (id_ro),
 	foreign key (co_id) references course (id_co)
 );
+
+insert into users (id_us,name_us,mail_us,password_us)
+values
+(1, 'Ana Maria', 'ana@teste.com', '123');
+
+insert into professor (id_pr,name_pr)
+values
+(1, 'Arley Souza');
+
+insert into room (id_ro,number_ro,level_ro,type_ro,description_ro)
+values
+(1, '207', '2 andar', 'Laboratório de Informática', 'Possui computadores');
+
+insert into course (id_co,name_co,semester_co)
+values
+(1, 'Desenvolvimento de Software Multiplataforma', '1');
+
+insert into room_has_course (begin_rc,end_rc,day_of_week_rc)
+values
+('18:45', '23:05', 'Segunda-feira');
