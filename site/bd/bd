@@ -40,19 +40,17 @@ create table if not exists room (
 );
 
 create table if not exists course (
-	id_co integer not null,
-	pr_id integer not null,
-	de_id integer not null,
+	id_co integer,
+	pr_id integer,
 	name_co VARCHAR(50),
 	semester_co integer not null,
 	primary key (id_co),
-	foreign key (pr_id) references professor (id_pr),
-	foreign key (de_id) references degree (id_de)
+	foreign key (pr_id) references professor (id_pr)
 );
 
 create table if not exists room_has_course (
-	ro_id integer not null,
-	co_id integer not null,
+	ro_id integer,
+	co_id integer,
 	begin_rc TIME,
 	end_rc TIME,
 	day_of_week_rc VARCHAR(20),
@@ -70,7 +68,7 @@ values
 
 insert into room (id_ro,number_ro,level_ro,type_ro,description_ro)
 values
-(1, '207', '2 andar', 'Laboratório de Informática', 'Possui computadores');
+(1, '207', 2, 'Laboratório de Informática', 'Possui computadores');
 
 insert into course (id_co,name_co,semester_co)
 values
