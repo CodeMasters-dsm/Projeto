@@ -21,7 +21,7 @@ Para estimular o aprendizado prático e a aplicação de conceitos teóricos, a 
 | Sprint | Link        | Início      | Entrega     | Status |
 |--------|-------------|-------------|-------------|--------|
 | 01     | [Sprint 01](#sprint-1) | 24/03/2025  | 15/04/2025  |  ✔    |
-| 02     | [Sprint 02](#sprint-2) | 16/04/2025  | 15/05/2025  |  ⏳    |
+| 02     | [Sprint 02](#sprint-2) | 16/04/2025  | 15/05/2025  |  ✔    |
 | 03     | [Sprint 03](#sprint-3) | 16/05/2025  | 11/06/2025  |  ⏳    |
 
 <br>
@@ -170,6 +170,8 @@ Foi decidido construir os principais elementos do protótipo das páginas atrav�
 | -  | 4 | Organizar a documentação no GitHub | Manuela e Gabrielly |  ✔  | ✔  |
 
 <br>
+
+
 <br>
 
 ### • Burndown Sprint 2
@@ -177,21 +179,22 @@ Foi decidido construir os principais elementos do protótipo das páginas atrav�
 📉
 <br>
 
+
 ### • Sprint Retrospective 
 <br>
 
 **1. O que funcionou bem durante o sprint?**
-<p>...</p>
+<p>A substituição do Scrum Master trouxe benefícios significativos à equipe. A mudança permitiu que um membro se dedicasse às suas atividades no DevTeam, resultando em maior engajamento e identificação com o projeto. Além disso, observou-se um fortalecimento da confiança entre os integrantes, resultando em uma colaboração mais fluida e eficiente.</p>
 <br>
 
 
 **2. O que não funcionou tão bem durante o sprint?**
-<p>...</p>
+<p>Durante este sprint, a equipe enfrentou dificuldades relacionadas à comunicação e à constância dos encontros semanais. As daily scrum foram realizadas com pouca frequência, o que gerou desalinhamentos, atrasos em determinadas entregas e algumas discordâncias sobre prioridades e responsabilidades.</p>
 <br>
 
 
 **3. Quais ações podemos tomar para melhorar no próximo sprint?**
-  <p>...</p>
+<p>Para o próximo sprint, é fundamental reforçar a realização das daily scrum, assegurando que todos os membros estejam atualizados sobre o andamento das atividades. Essa mudança pode ser feita com a definição de canais de comunicação mais diretos e documentação com checkpoints, para reduzir os riscos e garantir maior transparência no processo de desenvolvimento.</p>
 <br>
 
 
