@@ -111,9 +111,9 @@ Foi decidido construir os principais elementos do protótipo das páginas atrav�
 |  RNF - 2      | 1 | Projetar as interfaces no Figma, abrangendo as versões para desktop e mobile | Pedro e Marcelo|  ✔  | ✔  |
 |  RF - 5       | 1 | Levantar as informações essenciais que serão apresentadas no site | Pedro   | ✔  |✔  |
 |  RNF - 2      | 2 | Definir a harmonia visual do protótipo (como a paleta de cores), garantindo uma experiência suave e intuitiva | Manuela |  ✔  | ✔  |
-|  RNF - 1      | 3 | Delimitar as interações e funcionalidades do site por meio do Figma | Manuela  | ✔  | ✔  |
+|  RNF - 1      | 2 | Delimitar as interações e funcionalidades do site por meio do Figma | Manuela  | ✔  | ✔  |
 |  RNF - 1      | 4 | Verificar a fluidez da navegação, assegurando uma experiência de usuário primorosa | Gabrielly |  ✔  | ✔  |
-|  -       | 4 | Organizar a documentação no GitHub | Eric e Gabrielly |  ✔  | ✔  |
+|  -       | 3 | Organizar a documentação no GitHub | Eric e Gabrielly |  ✔  | ✔  |
 
 <br>
 <br>
@@ -157,17 +157,17 @@ Foi decidido construir os principais elementos do protótipo das páginas atrav�
 
 | ID REFERENCIA |Prioridade  | REQUISITO DA SPRINT| Responsável |TAREFA INICIADA | TAREFA CONCLUIDA | 
 |---------------|------------|--------------------|-------------|----------------|------------------|
-| RNF - 1\RNF - 2 | 7 | Criar a versão em desktop da página inicial utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Pedro | ✔  | ✔  |
-| RNF - 1\RNF - 2 | 7 | Criar a versão em mobile da página inicial utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Pedro | ✔  | ✔  |
-| RNF - 1\RNF - 2 | 7 | Criar a versão em desktop da página de login utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Eric  | ✔  | ✔  |
-| RNF - 1\RNF - 2 | 7 | Criar a versão em mobile da página de login utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Eric |  ✔  | ✔  |
+| RNF - 1\RNF - 2 | 6 | Criar a versão em desktop da página inicial utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Pedro | ✔  | ✔  |
+| RNF - 1\RNF - 2 | 6 | Criar a versão em mobile da página inicial utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Pedro | ✔  | ✔  |
+| RNF - 1\RNF - 2 | 6 | Criar a versão em desktop da página de login utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Eric  | ✔  | ✔  |
+| RNF - 1\RNF - 2 | 6 | Criar a versão em mobile da página de login utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Eric |  ✔  | ✔  |
 |  RF - 1     | 4 | Criar Modelo Relacional do Banco de Dados no DB Designer | Marcelo   | ✔  |✔  |
 |  RF - 1     | 8 | Inserção de informações no banco de dados com o uso de tabelas no PgAdmin | Gabrielly |  ✔  | ✔  |
-|      -  | 6 | Definição de linguagens e ferramentas usadas no backend | Manuela  | ✔  | ✔  |
+|      -  | 5 | Definição de linguagens e ferramentas usadas no backend | Manuela  | ✔  | ✔  |
 |  RF - 3    | 10 | Estabelecer conexão entre o banco de dados e o backend usando Node.js | Gabrielly e Marcelo |  ✔  | ⏳  |
 |  RF - 2      | 10 | Implementar um recurso completo com CRUD | Manuela  | ✔  | ⏳  |
-| RF - 2\RF - 3 | 6 | Testar rotas manualmente usando Postman | Gabrielly |  ✔  | ⏳  |
-| -  | 4 | Organizar a documentação no GitHub | Manuela e Gabrielly |  ✔  | ✔  |
+| RF - 2\RF - 3 | 5 | Testar rotas manualmente usando Postman | Gabrielly |  ✔  | ⏳  |
+| -  | 3 | Organizar a documentação no GitHub | Manuela e Gabrielly |  ✔  | ✔  |
 
 <br>
 
