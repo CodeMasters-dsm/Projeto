@@ -176,7 +176,10 @@ Foi decidido construir os principais elementos do protótipo das páginas atrav�
 
 ### • Burndown Sprint 2
 <br>
-![Captura de Tela (2)](https://github.com/user-attachments/assets/d40267e6-3fe6-4893-a29b-ff49d9814e0f)
+
+![image](https://github.com/user-attachments/assets/00695a26-f478-4b6e-87ca-d0793db8beb3)
+
+
 <br>
 
 <br>
