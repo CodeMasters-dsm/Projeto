@@ -179,11 +179,12 @@ Foi decidido construir os principais elementos do protótipo das páginas atrav�
 
 ![image](https://github.com/user-attachments/assets/00695a26-f478-4b6e-87ca-d0793db8beb3)
 
-
 <br>
 
 <br>
+
 ### • Sprint Retrospective 
+
 <br>
 
 **1. O que funcionou bem durante o sprint?**
