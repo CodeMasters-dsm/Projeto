@@ -176,7 +176,8 @@ Foi decidido construir os principais elementos do protótipo das páginas atrav�
 
 ### • Burndown Sprint 2
 <br>
-📉
+![image](https://github.com/user-attachments/assets/429e1e1d-cf66-4802-8697-2529bfa6282a)
+
 <br>
 
 
