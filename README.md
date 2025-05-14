@@ -76,13 +76,13 @@ Clique [aqui](https://trello.com/invite/b/67e1e9ab2a6046abcba03900/ATTI50b8625e8
 
 <br>
 
-## :file_folder: Diagrama Entidade Relacionamento (DER)
-<img width="576" alt="DIAGRAMA_CLASSE_TEAM_CODEMASTERS" src="https://github.com/user-attachments/assets/8d6194b6-1bf6-4902-8af7-fc0bc01988bd" />
+## :file_folder: Diagrama de Classes 
+<img width="576" alt="DIAGRAMA_CLASSE_TEAM_CODEMASTERS" src="https://github.com/user-attachments/assets/5623261c-eaa6-443e-a1cb-6d4a3f05f3c5" />
 
 <br>
 
 ## :file_folder: Modelo Relacional
-<img width="576" alt="MODELO_RELACIONAL_TEAM_CODEMASTERS" src="https://github.com/user-attachments/assets/ca877274-de4b-4d43-aeff-1f52179cec92" />
+<img width="576" alt="MODELO_RELACIONAL_TEAM_CODEMASTERS" src="https://github.com/user-attachments/assets/4875dde9-6742-4489-842c-e408d999e289" />
 
 <br>
 
@@ -172,7 +172,7 @@ Foi decidido construir os principais elementos do protótipo das páginas atrav�
 <br>
 <br>
 
-### • Burndown Sprint 1
+### • Burndown Sprint 2
 <br>
 📉
 <br>
