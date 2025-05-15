@@ -1,3 +1,4 @@
+
 // Espera o carregamento total do DOM
 document.addEventListener("DOMContentLoaded", function () {
     // Seleciona todos os itens com submenu
@@ -30,3 +31,5 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+
