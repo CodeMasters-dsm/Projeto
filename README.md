@@ -82,7 +82,7 @@ Clique [aqui](https://trello.com/invite/b/67e1e9ab2a6046abcba03900/ATTI50b8625e8
 <br>
 
 ## :file_folder: Modelo Relacional
-<img width="576" alt="MODELO_RELACIONAL_TEAM_CODEMASTERS" src="https://github.com/user-attachments/assets/4875dde9-6742-4489-842c-e408d999e289" />
+<img width="576" alt="MODELO_RELACIONAL_TEAM_CODEMASTERS" src="https://github.com/user-attachments/assets/f38279dc-78db-436f-ba29-cd16486feec8" />
 
 <br>
 
