@@ -1,5 +1,5 @@
-body {
-    margin: 0;
+   body {
+   margin: 0;
     font-family: Arial, sans-serif;
   }
   
@@ -212,3 +212,167 @@ body {
   .social-icons a:hover {
     color: #800; /* Cor ao passar o mouse */
   }
+  
+  .links-uteis {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+  border-top: 2px solid #a00;
+}
+
+.links-uteis h2 {
+  color: #900000;
+  font-size: 28px;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.grid-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card-link {
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  padding: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #008b8b;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.card-link i {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.card-link span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card-link:hover {
+  background-color: #eee;
+  transform: translateY(-4px);
+}
+
+.conteudo-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 30px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.agenda-eventos {
+  flex: 1;
+  min-width: 300px;
+}
+
+.agenda-eventos h2 {
+  color: #900000;
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-bottom: 4px solid #a00;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.agenda-eventos p {
+  font-size: 16px;
+  color: #333;
+}
+
+.links-uteis {
+  flex: 1;
+  min-width: 300px;
+  background-color: #fff;
+  text-align: center;
+  border-top: 2px solid #a00;
+}
+
+.links-uteis h2 {
+  color: #900000;
+  font-size: 28px;
+  margin-bottom: 30px;
+  display: inline-block;
+  position: relative;
+}
+
+.grid-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 0 20px 20px;
+}
+
+.links-uteis {
+  flex: 1;
+  min-width: 300px;
+  background-color: #fff;
+  text-align: center;
+  border-top: 2px solid #a00;
+  padding: 20px 0;
+}
+
+.links-uteis h2 {
+  color: #900000;
+  font-size: 28px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.grid-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0 30px;
+}
+
+.card-link {
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  padding: 20px 10px;
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.card-link:hover {
+  background-color: #eee;
+}
+
+.card-link i {
+  font-size: 28px;
+  color: #00a0a0;
+  margin-bottom: 8px;
+}
+
+.card-link span {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .grid-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .grid-links {
+    grid-template-columns: 1fr;
+  }
+}
