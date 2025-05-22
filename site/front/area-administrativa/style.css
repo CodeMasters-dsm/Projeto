@@ -272,4 +272,69 @@
     transform: translateX(5px);
     text-decoration: underline;
   }
-  
+
+/*sistema de horários*/
+
+ h1 {
+  margin: 10px 50px 0px;
+  font-size: 30px;
+  color: #a30000;
+  height: auto;
+  margin-left: 100px;
+  padding: 20px;
+}
+
+.conteudo-principal {
+    flex: 1;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabecalho {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.logo-fatec {
+  width: 100px; 
+  height: auto;
+}
+
+.filtros {
+  gap: 10px;
+  margin-top: 20px; 
+  justify-content: center; 
+  flex-wrap: wrap;
+}
+
+.filtro {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: 1px solid #800000;
+    border-radius: 20px;
+    background: white;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.botao-editar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #c00000;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.botao-editar img {
+    width: 24px;
+    height: 24px;
+}
