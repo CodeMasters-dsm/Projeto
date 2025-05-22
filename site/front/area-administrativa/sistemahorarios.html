@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Horários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu-toggle" onclick="toggleSidebar()">
+            <div class="barra"></div>
+            <div class="barra"></div>
+            <div class="barra"></div>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <nav class="menu-itens">
+                <ul>
+                    <li onclick="mostrarSecao('perfil')">Perfil</li>
+                    <li><a onclick="mostrarSecao('administrativo')">Área Administrativa</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main class="conteudo-principal">
+            <header class="cabecalho">
+                <h1>Sistema de Horários</h1>
+                <img src="../../assets/areaadm/logo-fatec.png" alt="Logo Fatec" class="logo-fatec">
+            </header>
+        </main>
+
+        <div class="filtros">
+            <button class="filtro">Curso ▸</button>
+            <button class="filtro">Turno ▸</button>
+            <button class="filtro">Turma ▸</button>
+            <button class="filtro">Professor(a) ▸</button>
+        </div>
+        <section class="resultado">
+
+        </section>
+        <button class="botao-editar">
+            <img src="../../assets/areaadm/editicon.png" alt="Editar">
+        </button>
+        
+</body>
+
+</html>
