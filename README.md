@@ -164,9 +164,9 @@ Foi decidido construir os principais elementos do protótipo das páginas atrav�
 |  RF - 1     | 4 | Criar Modelo Relacional do Banco de Dados no DB Designer | Marcelo   | ✔  |✔  |
 |  RF - 1     | 8 | Inserção de informações no banco de dados com o uso de tabelas no PgAdmin | Gabrielly |  ✔  | ✔  |
 |      -  | 5 | Definição de linguagens e ferramentas usadas no backend | Manuela  | ✔  | ✔  |
-|  RF - 3    | 10 | Estabelecer conexão entre o banco de dados e o backend usando Node.js | Gabrielly e Marcelo |  ✔  | ⏳  |
-|  RF - 2      | 10 | Implementar um recurso completo com CRUD | Manuela  | ✔  | ⏳  |
-| RF - 2\RF - 3 | 4 | Testar rotas manualmente usando Postman | Gabrielly |  ✔  | ⏳  |
+|  RF - 3    | 10 | Estabelecer conexão entre o banco de dados e o backend usando Node.js | Gabrielly e Marcelo |  ✔  | ❌  |
+|  RF - 2      | 10 | Implementar um recurso completo com CRUD | Manuela  | ✔  | ❌  |
+| RF - 2\RF - 3 | 4 | Testar rotas manualmente usando Postman | Gabrielly |  ✔  | ❌  |
 | -  | 3 | Organizar a documentação no GitHub | Manuela e Gabrielly |  ✔  | ✔  |
 
 <br>
