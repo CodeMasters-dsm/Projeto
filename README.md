@@ -103,17 +103,17 @@ Foi decidido construir os principais elementos do protótipo das páginas atrav�
 ## • Sprint Backlog
 <br>
 
-| ID REFERENCIA |Prioridade  | REQUISITO DA SPRINT| Responsável |TAREFA INICIADA | TAREFA CONCLUIDA | 
-|---------------|------------|--------------------|-------------|----------------|------------------|
-|  RF01       | Média (2) | Estabelecer os elementos essenciais das páginas para o desenvolvimento dos protótipos iniciais | Gabrielly | ✔  | ✔  |
-|  RNF02      | Baixa (5) | Criar os componentes fundamentais com base no Diagrama de Casos de Uso e Diagrama de Classes criado por meio do Astah UML | Eric e Marcelo | ✔  | ✔  |
-|  RF01       | Média (2) | Realizar uma reunião para fomentar a inspiração e a criatividade em torno do projeto | Eric  | ✔  | ✔  |
-|  RNF02      | Alta (1) | Projetar as interfaces no Figma, abrangendo as versões para desktop e mobile | Pedro e Marcelo|  ✔  | ✔  |
-|  RF05       | Alta (1) | Levantar as informações essenciais que serão apresentadas no site | Pedro   | ✔  |✔  |
-|  RNF02      | Média (2) | Definir a harmonia visual do protótipo (como a paleta de cores), garantindo uma experiência suave e intuitiva | Manuela |  ✔  | ✔  |
-|  RNF01      | Média (2) | Delimitar as interações e funcionalidades do site por meio do Figma | Manuela  | ✔  | ✔  |
-|  RNF01      | Alta (1) | Verificar a fluidez da navegação, assegurando uma experiência de usuário primorosa | Gabrielly |  ✔  | ✔  |
-|  -       | Baixa (4) | Organizar a documentação no GitHub | Eric e Gabrielly |  ✔  | ✔  |
+| ID REFERENCIA |Prioridade  | Estimativa Fibonacci | REQUISITO DA SPRINT| Responsável |TAREFA INICIADA | TAREFA CONCLUIDA | 
+|---------------|------------|----------------------|--------------------|-------------|----------------|------------------|
+|  RF01       | Média (2) | 1 | Estabelecer os elementos essenciais das páginas para o desenvolvimento dos protótipos iniciais | Gabrielly | ✔  | ✔  |
+|  RNF02      | Baixa (5) | 2 | Criar os componentes fundamentais com base no Diagrama de Casos de Uso e Diagrama de Classes criado por meio do Astah UML | Eric e Marcelo | ✔  | ✔  |
+|  RF01       | Média (2) | 2 | Realizar uma reunião para fomentar a inspiração e a criatividade em torno do projeto | Eric  | ✔  | ✔  |
+|  RNF02      | Alta (1) | 5 | Projetar as interfaces no Figma, abrangendo as versões para desktop e mobile | Pedro e Marcelo|  ✔  | ✔  |
+|  RF05       | Alta (1) | 3 | Levantar as informações essenciais que serão apresentadas no site | Pedro   | ✔  |✔  |
+|  RNF02      | Média (2) | 2 | Definir a harmonia visual do protótipo (como a paleta de cores), garantindo uma experiência suave e intuitiva | Manuela |  ✔  | ✔  |
+|  RNF01      | Média (2) | 3 | Delimitar as interações e funcionalidades do site por meio do Figma | Manuela  | ✔  | ✔  |
+|  RNF01      | Alta (1) | 2 | Verificar a fluidez da navegação, assegurando uma experiência de usuário primorosa | Gabrielly |  ✔  | ✔  |
+|  -       | Baixa (4) | 2 | Organizar a documentação no GitHub | Eric e Gabrielly |  ✔  | ✔  |
 
 <br>
 <br>
@@ -155,19 +155,19 @@ Foi decidido construir os principais elementos do protótipo das páginas atrav�
 ## • Sprint Backlog
 <br>
 
-| ID REFERENCIA |Prioridade  | REQUISITO DA SPRINT| Responsável |TAREFA INICIADA | TAREFA CONCLUIDA | 
-|---------------|------------|--------------------|-------------|----------------|------------------|
-| RNF01/RNF02 | Alta (1) | Criar a versão em desktop da página inicial utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Pedro | ✔  | ✔  |
-| RNF01/RNF02 | Alta (1) | Criar a versão em mobile da página inicial utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Pedro | ✔  | ✔  |
-| RNF01/RNF02 | Alta (1) | Criar a versão em desktop da página de login utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Eric  | ✔  | ✔  |
-| RNF01/RNF02 | Alta (1) | Criar a versão em mobile da página de login utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Eric |  ✔  | ✔  |
-|  RF01     | Baixa (4) | Criar Modelo Relacional do Banco de Dados no DB Designer | Marcelo   | ✔  |✔  |
-|  RF01     | Alta (1) | Inserção de informações no banco de dados com o uso de tabelas no PgAdmin | Gabrielly |  ✔  | ✔  |
-|  -  | Média (2) | Definição de linguagens e ferramentas usadas no backend | Manuela  | ✔  | ✔  |
-|  RF03    | Alta (1) | Estabelecer conexão entre o banco de dados e o backend usando Node.js | Gabrielly e Marcelo |  ✔  | ❌  |
-|  RF02    | Alta (1) | Implementar um recurso completo com CRUD | Manuela  | ✔  | ❌  |
-| RF02/RF03 | Média (2) | Testar rotas manualmente usando Postman | Gabrielly |  ✔  | ❌  |
-|  -  | Baixa (5) | Organizar a documentação no GitHub | Manuela e Gabrielly |  ✔  | ✔  |
+| ID REFERENCIA |Prioridade  | Estimativa Fibonacci | REQUISITO DA SPRINT| Responsável |TAREFA INICIADA | TAREFA CONCLUIDA | 
+|---------------|------------|----------------------|--------------------|-------------|----------------|------------------|
+| RNF01/RNF02 | Alta (1) | 5 | Criar a versão em desktop da página inicial utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Pedro | ✔  | ✔  |
+| RNF01/RNF02 | Alta (1) | 5 | Criar a versão em mobile da página inicial utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Pedro | ✔  | ✔  |
+| RNF01/RNF02 | Alta (1) | 5 | Criar a versão em desktop da página de login utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Eric  | ✔  | ✔  |
+| RNF01/RNF02 | Alta (1) | 5 | Criar a versão em mobile da página de login utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Eric |  ✔  | ✔  |
+|  RF01     | Baixa (4) | 5 | Criar Modelo Relacional do Banco de Dados no DB Designer | Marcelo   | ✔  |✔  |
+|  RF01     | Alta (1) | 3 | Inserção de informações no banco de dados com o uso de tabelas no PgAdmin | Gabrielly |  ✔  | ✔  |
+|  -  | Média (2) | 1 | Definição de linguagens e ferramentas usadas no backend | Manuela  | ✔  | ✔  |
+|  RF03    | Alta (1) | 3 | Estabelecer conexão entre o banco de dados e o backend usando Node.js | Gabrielly e Marcelo |  ✔  | ❌  |
+|  RF02    | Alta (1) | 5 | Implementar um recurso completo com CRUD | Manuela  | ✔  | ❌  |
+| RF02/RF03 | Média (2) | 3 | Testar rotas manualmente usando Postman | Gabrielly |  ✔  | ❌  |
+|  -  | Baixa (5) | 2 | Organizar a documentação no GitHub | Manuela e Gabrielly |  ✔  | ✔  |
 
 <br>
 
