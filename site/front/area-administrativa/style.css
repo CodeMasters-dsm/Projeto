@@ -280,7 +280,7 @@
   font-size: 30px;
   color: #a30000;
   height: auto;
-  margin-left: 100px;
+  margin-left: 50px;
   padding: 20px;
 }
 
@@ -310,23 +310,26 @@ header {
   margin-top: 20px; 
   justify-content: center; 
   flex-wrap: wrap;
+  margin-left: 300px;
+  margin-bottom: 1rem;
 }
 
 .filtro {
-    margin-right: 10px;
+    margin-right: 70px;
     padding: 10px 20px;
-    border: 1px solid #800000;
+    border: 1px solid black;
     border-radius: 20px;
     background: white;
     cursor: pointer;
     display: inline-block;
 }
 
+
 .botao-editar {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #c00000;
+    bottom: 35px;
+    right: 35px;
+    background: #a30000;
     border: none;
     border-radius: 50%;
     width: 50px;
@@ -335,6 +338,6 @@ header {
 }
 
 .botao-editar img {
-    width: 24px;
-    height: 24px;
+    width: 35px;
+    height: 35px;
 }
