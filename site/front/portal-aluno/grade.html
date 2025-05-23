@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Consulta de Horários</title>
+  <link rel="stylesheet" href="grade.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="menu-toggle" onclick="toggleSidebar()">
+      <div class="barra"></div>
+      <div class="barra"></div>
+      <div class="barra"></div>
+    </div>
+  
+    <div class="sidebar" id="sidebar">
+      <nav class="menu-itens">
+        <ul>
+          <li onclick="mostrarSecao('grade')">Grade</li>
+          <li><a onclick="mostrarSecao('disciplinas')">Disciplinas</a></li>
+          <li><a onclick="mostrarSecao('horarios')">Sistema de Horários</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="main-content">
+      <div class="header">
+        <img src="../../assets/areaadm/logo-fatec.png" alt="Fatec Jacareí" class="logo-fatec" />
+      </div>
+      <main>
+        <main>
+            <section class="grade">
+              <h2>Grade Curricular ▼</h2>
+              <ul>
+                <li>1º Semestre</li>
+                <li>2º Semestre</li>
+                <li>3º Semestre</li>
+                <li>4º Semestre</li>
+                <li>5º Semestre</li>
+                <li>6º Semestre</li>
+              </ul>
+            </section>
+          
+          <section class="disciplinas" id="disciplinas"></section>
+
+        <section class="disciplinas">
+            <h2>Disciplinas ▶</h2>
+            <ul>
+              <li>Algoritmos e Lógica de Programação</li>
+              <li>Sistemas Operacionais e Redes de Computadores</li>
+              <li>Desenvolvimento Web I</li>
+              <li>Engenharia de Software</li>
+              <li>Design Digital</li>
+              <li>Modelagem de Banco de Dados</li>
+            </ul>
+          </section>
+
+          <section class="horarios">
+            <h2>Sistema de Horários</h2>
+            <div class="filtros">
+              <button>Curso ▸</button>
+              <button>Turno ▸</button>
+              <button>Turma ▸</button>
+              <button>Professor(a) ▸</button>
+            </div>
+            <ul>
+              <li>1DSM</li>
+              <li>2DSM</li>
+              <li>1Geo</li>
+              <li>2Geo</li>
+            </ul>
+          </section>
+
+      <div id="conteudo-dinamico" class="conteudo"></div>
+    </div>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('expandida');
+    }
+
+    function mostrarSecao(secao) {
+  const conteudo = document.getElementById("conteudo-dinamico");
+  const profile = document.getElementById("profile-section");
+
+  if (secao === 'perfil') {
+    conteudo.innerHTML = `
+     
+    `;
+    profile.style.display = 'flex';
+  } else if (secao === 'administrativo') {
+   conteudo.innerHTML = `
+<div class="secao-admin">
+  <a href="sistemahorarios.html" class="titulo-link">
+    Sistema de Horários
+    <img src="download.svg" alt="seta" class="seta" />
+  </a>
+
+  <a href="material-apoio.html" class="titulo-link">
+    Material de Apoio
+    <img src="download.svg" alt="seta" class="seta" />
+  </a>
+
+  <a href="mural.html" class="titulo-link">
+    Mural
+    <img src="download.svg" alt="seta" class="seta" />
+  </a>
+
+  <a href="calendario-academico.html" class="titulo-link">
+    Calendário Acadêmico
+    <img src="download.svg" alt="seta" class="seta" />
+  </a>
+</div>
+`;
+
+    profile.style.display = 'none';
+  }
+
+  // Fecha a sidebar no mobile
+  const sidebar = document.getElementById('sidebar');
+  if (window.innerWidth <= 768) {
+    sidebar.classList.remove('expandida');
+  }
+}
+
+
+  </script>
+</body>
+</html>
