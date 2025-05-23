@@ -40,19 +40,19 @@ Clique [aqui](https://trello.com/invite/b/67e1e9ab2a6046abcba03900/ATTI50b8625e8
 
 | REQUISITO FUNCIONAL_ID | REQUISITOS                                                                                                 | SPRINTS |
 |------------------------|------------------------------------------------------------------------------------------------------------|---------|
-| RF - 1                 | Fazer a ingestão de dados no sistema a partir de uma fonte tal como um arquivo CSV                         | #1 #2   |
-| RF - 2                 | (opcional) Fazer o gerenciamento dos dados do sistema (CRUD) através da interface da aplicação, permitindo que a secretaria acadêmica/coordenação altere os dados por meio de uma tela da aplicação |  #3  |
-| RF - 3                 | Garantir que o cadastro ou a ingestão de dados satisfaça as regras básicas de alocação da faculdade (ex.: duas turmas diferentes não podem ser alocadas na mesma sala, e um professor não pode ter duas turmas no mesmo horário) | #2   |
-| RF - 4                 | Permitir que o sistema exporte relatórios/mapas de ambientes e horários em formato PDF                     |  #3  |
-| RF - 5                 | Permitir consultas no sistema (ex.: por turma, turno, professor, data) para apoiar a gestão da faculdade.  |  #2  |
+| RF01                 | Fazer a ingestão de dados no sistema a partir de uma fonte tal como um arquivo CSV                         | #1 #2   |
+| RF02                 | (opcional) Fazer o gerenciamento dos dados do sistema (CRUD) através da interface da aplicação, permitindo que a secretaria acadêmica/coordenação altere os dados por meio de uma tela da aplicação |  #3  |
+| RF03                 | Garantir que o cadastro ou a ingestão de dados satisfaça as regras básicas de alocação da faculdade (ex.: duas turmas diferentes não podem ser alocadas na mesma sala, e um professor não pode ter duas turmas no mesmo horário) | #2   |
+| RF04                 | Permitir que o sistema exporte relatórios/mapas de ambientes e horários em formato PDF                     |  #3  |
+| RF05                 | Permitir consultas no sistema (ex.: por turma, turno, professor, data) para apoiar a gestão da faculdade.  |  #2  |
 
 
 ### REQUISITOS NÃO FUNCIONAIS
 
 | REQUISITO NÃO_FUNCIONAL_ID | REQUISITOS                                                                                          | SPRINTS     |
 |----------------------------|-----------------------------------------------------------------------------------------------------|-------------|
-| RNF - 1                    | Requisito de interface: exibir um mapa de salas com a opção interativa de clicar e visualizar a situação do ambiente (ex. aulas alocadas ao longo dos turnos do dia) |  #1  |
-| RNF - 2                    | Garantir que o sistema seja responsivo, mantendo um layout consistente em dispositivos móveis e preservando a arquitetura de informação da interface | #1    |
+| RNF01                    | Requisito de interface: exibir um mapa de salas com a opção interativa de clicar e visualizar a situação do ambiente (ex. aulas alocadas ao longo dos turnos do dia) |  #1  |
+| RNF02                    | Garantir que o sistema seja responsivo, mantendo um layout consistente em dispositivos móveis e preservando a arquitetura de informação da interface | #1    |
 
 <br>
 
@@ -62,12 +62,12 @@ Clique [aqui](https://trello.com/invite/b/67e1e9ab2a6046abcba03900/ATTI50b8625e8
 
 | ID REFERENCIA | Remetente | Instrução | Finalidade | 
 |---------------|-----------|-----------|------------|
-| RF - 1        | Cliente   | Eu quero fazer a ingestão de dados acadêmicos de um arquivo CSV | Para que eu possa adicionar várias turmas, professores e horários ao sistema de forma eficiente e sem precisar cadastrar manualmente cada entrada |
-| RF - 2        | Cliente   | Eu quero poder adicionar, editar, excluir e visualizar turmas, professores, horários e salas através da interface da aplicação | Para que eu possa facilmente manter e atualizar os dados acadêmicos do sistema |
-| RF - 3        | Cliente   | Eu quero que o sistema valide a alocação de salas e horários de acordo com as regras de conflito | Para que eu possa evitar sobrecarga de salas e horários para os professores |
-| RF - 4        | Cliente   | Eu quero gerar relatórios de alocação de salas e horários em formato PDF | Para que eu possa facilmente compartilhar e imprimir essas informações para análise e tomada de decisões | 
-| RF - 5/RNF - 1| Usuário   | Eu quero fazer consultas e visualizar um mapa interativo das salas de aula | Para que eu possa clicar em cada sala e ver rapidamente a alocação de aulas para cada turno do dia |
-| RNF - 2       | Usuário   | Eu quero que a interface seja responsiva e se ajuste corretamente em dispositivos móveis | Para que eu possa usar a aplicação com a mesma facilidade em qualquer dispositivo |
+| RF01        | Cliente   | Eu quero fazer a ingestão de dados acadêmicos de um arquivo CSV | Para que eu possa adicionar várias turmas, professores e horários ao sistema de forma eficiente e sem precisar cadastrar manualmente cada entrada |
+| RF02        | Cliente   | Eu quero poder adicionar, editar, excluir e visualizar turmas, professores, horários e salas através da interface da aplicação | Para que eu possa facilmente manter e atualizar os dados acadêmicos do sistema |
+| RF03        | Cliente   | Eu quero que o sistema valide a alocação de salas e horários de acordo com as regras de conflito | Para que eu possa evitar sobrecarga de salas e horários para os professores |
+| RF04        | Cliente   | Eu quero gerar relatórios de alocação de salas e horários em formato PDF | Para que eu possa facilmente compartilhar e imprimir essas informações para análise e tomada de decisões | 
+| RF05/RNF01  | Usuário   | Eu quero fazer consultas e visualizar um mapa interativo das salas de aula | Para que eu possa clicar em cada sala e ver rapidamente a alocação de aulas para cada turno do dia |
+| RNF02       | Usuário   | Eu quero que a interface seja responsiva e se ajuste corretamente em dispositivos móveis | Para que eu possa usar a aplicação com a mesma facilidade em qualquer dispositivo |
 
 <br>
 
@@ -105,15 +105,15 @@ Foi decidido construir os principais elementos do protótipo das páginas atrav�
 
 | ID REFERENCIA |Prioridade  | REQUISITO DA SPRINT| Responsável |TAREFA INICIADA | TAREFA CONCLUIDA | 
 |---------------|------------|--------------------|-------------|----------------|------------------|
-|  RF - 1       | 2 | Estabelecer os elementos essenciais das páginas para o desenvolvimento dos protótipos iniciais | Gabrielly | ✔  | ✔  |
-|  RNF - 2      | 2 | Criar os componentes fundamentais com base no Diagrama de Casos de Uso e Diagrama de Classes criado por meio do Astah UML | Eric e Marcelo | ✔  | ✔  |
-|  RF - 1       | 3 | Realizar uma reunião para fomentar a inspiração e a criatividade em torno do projeto | Eric  | ✔  | ✔  |
-|  RNF - 2      | 1 | Projetar as interfaces no Figma, abrangendo as versões para desktop e mobile | Pedro e Marcelo|  ✔  | ✔  |
-|  RF - 5       | 1 | Levantar as informações essenciais que serão apresentadas no site | Pedro   | ✔  |✔  |
-|  RNF - 2      | 2 | Definir a harmonia visual do protótipo (como a paleta de cores), garantindo uma experiência suave e intuitiva | Manuela |  ✔  | ✔  |
-|  RNF - 1      | 2 | Delimitar as interações e funcionalidades do site por meio do Figma | Manuela  | ✔  | ✔  |
-|  RNF - 1      | 4 | Verificar a fluidez da navegação, assegurando uma experiência de usuário primorosa | Gabrielly |  ✔  | ✔  |
-|  -       | 3 | Organizar a documentação no GitHub | Eric e Gabrielly |  ✔  | ✔  |
+|  RF01       | Média (2) | Estabelecer os elementos essenciais das páginas para o desenvolvimento dos protótipos iniciais | Gabrielly | ✔  | ✔  |
+|  RNF02      | Baixa (5) | Criar os componentes fundamentais com base no Diagrama de Casos de Uso e Diagrama de Classes criado por meio do Astah UML | Eric e Marcelo | ✔  | ✔  |
+|  RF01       | Média (2) | Realizar uma reunião para fomentar a inspiração e a criatividade em torno do projeto | Eric  | ✔  | ✔  |
+|  RNF02      | Alta (1) | Projetar as interfaces no Figma, abrangendo as versões para desktop e mobile | Pedro e Marcelo|  ✔  | ✔  |
+|  RF05       | Alta (1) | Levantar as informações essenciais que serão apresentadas no site | Pedro   | ✔  |✔  |
+|  RNF02      | Média (2) | Definir a harmonia visual do protótipo (como a paleta de cores), garantindo uma experiência suave e intuitiva | Manuela |  ✔  | ✔  |
+|  RNF01      | Média (2) | Delimitar as interações e funcionalidades do site por meio do Figma | Manuela  | ✔  | ✔  |
+|  RNF01      | Alta (1) | Verificar a fluidez da navegação, assegurando uma experiência de usuário primorosa | Gabrielly |  ✔  | ✔  |
+|  -       | Baixa (4) | Organizar a documentação no GitHub | Eric e Gabrielly |  ✔  | ✔  |
 
 <br>
 <br>
@@ -157,17 +157,17 @@ Foi decidido construir os principais elementos do protótipo das páginas atrav�
 
 | ID REFERENCIA |Prioridade  | REQUISITO DA SPRINT| Responsável |TAREFA INICIADA | TAREFA CONCLUIDA | 
 |---------------|------------|--------------------|-------------|----------------|------------------|
-| RNF - 1\RNF - 2 | 6 | Criar a versão em desktop da página inicial utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Pedro | ✔  | ✔  |
-| RNF - 1\RNF - 2 | 6 | Criar a versão em mobile da página inicial utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Pedro | ✔  | ✔  |
-| RNF - 1\RNF - 2 | 6 | Criar a versão em desktop da página de login utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Eric  | ✔  | ✔  |
-| RNF - 1\RNF - 2 | 6 | Criar a versão em mobile da página de login utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Eric |  ✔  | ✔  |
-|  RF - 1     | 4 | Criar Modelo Relacional do Banco de Dados no DB Designer | Marcelo   | ✔  |✔  |
-|  RF - 1     | 8 | Inserção de informações no banco de dados com o uso de tabelas no PgAdmin | Gabrielly |  ✔  | ✔  |
-|      -  | 5 | Definição de linguagens e ferramentas usadas no backend | Manuela  | ✔  | ✔  |
-|  RF - 3    | 10 | Estabelecer conexão entre o banco de dados e o backend usando Node.js | Gabrielly e Marcelo |  ✔  | ❌  |
-|  RF - 2      | 10 | Implementar um recurso completo com CRUD | Manuela  | ✔  | ❌  |
-| RF - 2\RF - 3 | 4 | Testar rotas manualmente usando Postman | Gabrielly |  ✔  | ❌  |
-| -  | 3 | Organizar a documentação no GitHub | Manuela e Gabrielly |  ✔  | ✔  |
+| RNF01/RNF02 | Alta (1) | Criar a versão em desktop da página inicial utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Pedro | ✔  | ✔  |
+| RNF01/RNF02 | Alta (1) | Criar a versão em mobile da página inicial utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Pedro | ✔  | ✔  |
+| RNF01/RNF02 | Alta (1) | Criar a versão em desktop da página de login utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Eric  | ✔  | ✔  |
+| RNF01/RNF02 | Alta (1) | Criar a versão em mobile da página de login utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Eric |  ✔  | ✔  |
+|  RF01     | Baixa (4) | Criar Modelo Relacional do Banco de Dados no DB Designer | Marcelo   | ✔  |✔  |
+|  RF01     | Alta (1) | Inserção de informações no banco de dados com o uso de tabelas no PgAdmin | Gabrielly |  ✔  | ✔  |
+|  -  | Média (2) | Definição de linguagens e ferramentas usadas no backend | Manuela  | ✔  | ✔  |
+|  RF03    | Alta (1) | Estabelecer conexão entre o banco de dados e o backend usando Node.js | Gabrielly e Marcelo |  ✔  | ❌  |
+|  RF02    | Alta (1) | Implementar um recurso completo com CRUD | Manuela  | ✔  | ❌  |
+| RF02/RF03 | Média (2) | Testar rotas manualmente usando Postman | Gabrielly |  ✔  | ❌  |
+|  -  | Baixa (5) | Organizar a documentação no GitHub | Manuela e Gabrielly |  ✔  | ✔  |
 
 <br>
 
@@ -199,6 +199,36 @@ Foi decidido construir os principais elementos do protótipo das páginas atrav�
 
 **3. Quais ações podemos tomar para melhorar no próximo sprint?**
 <p>Para o próximo sprint, é fundamental reforçar a realização das daily scrum, assegurando que todos os membros estejam atualizados sobre o andamento das atividades. Essa mudança pode ser feita com a definição de canais de comunicação mais diretos e documentação com checkpoints, para reduzir os riscos e garantir maior transparência no processo de desenvolvimento.</p>
+<br>
+
+
+
+
+
+# :page_with_curl: SPRINT 3
+<p>Na Terceira Sprint, observamos um avanço significativo no projeto. A principal melhoria foi a elaboração de um backlog mais detalhado e descritivo, o que proporcionou maior clareza para a equipe de desenvolvimento. Com tarefas mais bem definidas e objetivos claros, a sprint se tornou muito mais produtiva, permitindo que os desenvolvedores focassem em suas entregas com menos bloqueios e maior autonomia.
+</p>
+
+<br>
+
+## • Sprint Backlog
+<br>
+
+| ID REFERENCIA |Prioridade  | Estimativa Fibonacci | REQUISITO DA SPRINT| Responsável |TAREFA INICIADA | TAREFA CONCLUIDA | 
+|---------------|------------|----------------------|--------------------|-------------|----------------|------------------|
+| RNF01/RNF02 | Alta (1) | 5 | Criação da página "Sistema de Horários" (HTML e CSS). | Gabrielly e Eric | ✔  | ⏳  |
+| RNF01/RNF02 | Alta (1) | 5 | Criação das demais páginas da aquisição (HTML e CSS). | Eric e Marcelo | ✔  | ⏳  |
+| RF01 | Média (2) | 2 | Complementação dos dados no Banco de Dados. | Pedro  | ✔  | ⏳  |
+| RP02 | Alta (1) | 5 | Elaboração da estrutura do backend (JavaScript e Node.js). | Manuela e Pedro |  ⏳  | ⏳  |
+|  RF02     | Alta (1) | 8 | Implementação dos recursos de CRUD. | Manuela e Pedro   | ⏳  | ⏳  |
+|  RF03     | Alta (1) | 3 | Estabelecimento da conexão entre o Banco de Dados e o Backend. | Eric e Marcelo |  ⏳  | ⏳  |
+| RF02/RF03 | Média (2) | 3 | Testagem das rotas de aplicação. | Gabrielly e Marcelo  | ⏳  | ⏳  |
+|  -     | Baixa (4) | 2 | Revisão geral, testes finais e ajustes. | Gabrielly e Manuela |  ⏳  | ⏳  |
+|  -     | Baixa (5) | 2 | Documentação no GitHub | Gabrielly e Manuela  | ⏳  | ⏳  |
+
+<br>
+
+
 <br>
 
 
