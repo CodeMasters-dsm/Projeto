@@ -217,10 +217,10 @@
   
     .profile-section {
       flex-direction: column;
-      align-items: center; /* centraliza na horizontal */
-      text-align: center;   /* centraliza o texto */
+      align-items: center; 
+      text-align: center;  
       margin-top: 20px;
-      margin-left: 0;       /* remove deslocamento lateral */
+      margin-left: 0;      
     }
   
     .info-text {
@@ -243,7 +243,7 @@
     }
   
     .main-content {
-      padding-top: 60px; /* espaço para o menu fixo */
+      padding-top: 60px; 
     }
   }
   .menu-itens li {
