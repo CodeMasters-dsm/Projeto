@@ -17,8 +17,10 @@
         <div class="sidebar" id="sidebar">
             <nav class="menu-itens">
                 <ul>
-                    <li onclick="mostrarSecao('perfil')">Perfil</li>
-                    <li><a onclick="mostrarSecao('administrativo')">Área Administrativa</a></li>
+                    <a href="index.html">
+                        <li onclick="mostrarSecao('perfil')">Perfil</li>
+                    </a>
+                    <li onclick="mostrarSecao('administrativo')">Área Administrativa</li>
                 </ul>
             </nav>
         </div>
@@ -28,21 +30,34 @@
                 <h1>Sistema de Horários</h1>
                 <img src="../../assets/areaadm/logo-fatec.png" alt="Logo Fatec" class="logo-fatec">
             </header>
-               <div class="filtros">
-            <button class="filtro">Curso ▸</button>
-            <button class="filtro">Turno ▸</button>
-            <button class="filtro">Turma ▸</button>
-            <button class="filtro">Professor(a) ▸</button>
-        </div>
+            <div class="filtros">
+                <button class="filtro" categoria="Curso">Curso ▸</button>
+                <button class="filtro" categoria="Turno">Turno ▸</button>
+                <button class="filtro" categoria="Matéria">Matéria ▸</button>
+                <button class="filtro" categoria="Professor">Professor(a) ▸</button>
+                <button class="filtro" categoria="Sala">Sala ▸</button>
+            </div>
         </main>
 
         <section class="resultado">
 
         </section>
         <button class="botao-editar">
-            <img src="../../assets/areaadm/editicon.png" alt="Editar">
+            <img src="../../assets/areaadm/editicon.png.png" alt="Editar">
         </button>
-        
+
+        <script>
+            function toggleSidebar() {
+                const sidebar = document.getElementById('sidebar');
+                sidebar.classList.toggle('expandida');
+            }
+
+            function mostrarSecao(secao) {
+                const conteudo = document.getElementById("conteudo-dinamico");
+                const profile = document.getElementById("profile-section");
+            }
+
+        </script>
 </body>
 
 </html>
