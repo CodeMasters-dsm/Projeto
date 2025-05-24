@@ -133,9 +133,6 @@ values
 (22, 209, 2, Laboratório de informática); 
 (23, 210, 2, Sala de áudio e vídeo);
 
-insert into course (id_co,name_co,semester_co)
-values
-(1, 'Desenvolvimento de Software Multiplataforma', '1');
 
 insert into room_has_course (begin_rc,end_rc,day_of_week_rc)
 values
