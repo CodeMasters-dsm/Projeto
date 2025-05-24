@@ -133,4 +133,17 @@ values
 (22, 209, 2, Laboratório de informática); 
 (23, 210, 2, Sala de áudio e vídeo);
 
+INSERT INTO course (id_co, pr_id, name_co, semester_co) VALUES
+(1, 1, 'Algoritmos e Lógica de Programação', 1),
+(2, 2, 'Banco de Dados I', 2),
+(3, 3, 'Redes de Computadores', 3),
+(4, 4, 'Engenharia de Software I', 4),
+(5, 5, 'Programação Web', 2),
+(6, 6, 'Sistemas Operacionais', 3),
+(7, 7, 'Estrutura de Dados', 2),
+(8, 8, 'Banco de Dados II', 4),
+(9, 9, 'Cibersegurança', 5),
+(10, 10, 'Inteligência Artificial', 6),
+(11, 3, 'Desenvolvimento Mobile', 5),
+(12, 5, 'Gestão de Projetos', 6);
 
