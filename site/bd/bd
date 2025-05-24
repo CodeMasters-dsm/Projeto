@@ -134,6 +134,3 @@ values
 (23, 210, 2, Sala de áudio e vídeo);
 
 
-insert into room_has_course (begin_rc,end_rc,day_of_week_rc)
-values
-('18:45', '23:05', 'Segunda-feira');
