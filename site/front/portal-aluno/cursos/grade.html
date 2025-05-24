@@ -3,26 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Consulta de Horários</title>
-  <link rel="stylesheet" href="grade.css" />
+  <title>Grade Curricular</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <div class="container">
-    <div class="menu-toggle" onclick="toggleSidebar()">
-      <div class="barra"></div>
-      <div class="barra"></div>
-      <div class="barra"></div>
-    </div>
-  
-    <div class="sidebar" id="sidebar">
-      <nav class="menu-itens">
-        <ul>
-          <li onclick="mostrarSecao('grade')">Grade</li>
-          <li><a onclick="mostrarSecao('disciplinas')">Disciplinas</a></li>
-          <li><a onclick="mostrarSecao('horarios')">Sistema de Horários</a></li>
-        </ul>
-      </nav>
-    </div>
 
     <div class="main-content">
       <div class="header">
@@ -31,102 +14,48 @@
       <main>
         <main>
             <section class="grade">
-              <h2>Grade Curricular ▼</h2>
+              <h2>Grade Curricular</h2>
               <ul>
-                <li>1º Semestre</li>
-                <li>2º Semestre</li>
-                <li>3º Semestre</li>
-                <li>4º Semestre</li>
-                <li>5º Semestre</li>
-                <li>6º Semestre</li>
+                <li class="1sem" onclick="mostrarImagem('img1')">1º Semestre</li>
+                <li class="2sem" onclick="mostrarImagem('img2')">2º Semestre</li>
+                <li class="3sem" onclick="mostrarImagem('img3')">3º Semestre</li>
+                <li class="4sem" onclick="mostrarImagem('img4')">4º Semestre</li>
+                <li class="5sem" onclick="mostrarImagem('img5')">5º Semestre</li>
+                <li class="6sem" onclick="mostrarImagem('img6')">6º Semestre</li>
               </ul>
             </section>
-          
-          <section class="disciplinas" id="disciplinas"></section>
 
-        <section class="disciplinas">
-            <h2>Disciplinas ▶</h2>
-            <ul>
-              <li>Algoritmos e Lógica de Programação</li>
-              <li>Sistemas Operacionais e Redes de Computadores</li>
-              <li>Desenvolvimento Web I</li>
-              <li>Engenharia de Software</li>
-              <li>Design Digital</li>
-              <li>Modelagem de Banco de Dados</li>
-            </ul>
-          </section>
-
-          <section class="horarios">
-            <h2>Sistema de Horários</h2>
-            <div class="filtros">
-              <button>Curso ▸</button>
-              <button>Turno ▸</button>
-              <button>Turma ▸</button>
-              <button>Professor(a) ▸</button>
+            <div id="img1" class="imagem">
+              <img src="../../assets/portal-aluno/1sem-dsm-grade.png" alt="Imagem 1" width="300">
             </div>
-            <ul>
-              <li>1DSM</li>
-              <li>2DSM</li>
-              <li>1Geo</li>
-              <li>2Geo</li>
-            </ul>
-          </section>
+            <div id="img2" class="imagem">
+              <img src="" alt="Imagem 2" width="300">
+            </div>
+            <div id="img3" class="imagem">
+              <img src="" alt="Imagem 3" width="300">
+            </div>
+            <div id="img4" class="imagem">
+              <img src="" alt="Imagem 4" width="300">
+            </div>
+            <div id="img5" class="imagem">
+              <img src="" alt="Imagem 5" width="300">
+            </div>
+            <div id="img6" class="imagem">
+              <img src="" alt="Imagem 6" width="300">
+            </div>
 
-      <div id="conteudo-dinamico" class="conteudo"></div>
     </div>
   </div>
 
   <script>
-    function toggleSidebar() {
-      const sidebar = document.getElementById('sidebar');
-      sidebar.classList.toggle('expandida');
+    function mostrarImagem(id) {
+      var imagens = document.getElementsByClassName('imagem');
+      for (var i = 0; i < imagens.length; i++) {
+        imagens[i].style.display = 'none';
+      }
+      document.getElementById(id).style.display = 'block';
     }
-
-    function mostrarSecao(secao) {
-  const conteudo = document.getElementById("conteudo-dinamico");
-  const profile = document.getElementById("profile-section");
-
-  if (secao === 'perfil') {
-    conteudo.innerHTML = `
-     
-    `;
-    profile.style.display = 'flex';
-  } else if (secao === 'administrativo') {
-   conteudo.innerHTML = `
-<div class="secao-admin">
-  <a href="sistemahorarios.html" class="titulo-link">
-    Sistema de Horários
-    <img src="download.svg" alt="seta" class="seta" />
-  </a>
-
-  <a href="material-apoio.html" class="titulo-link">
-    Material de Apoio
-    <img src="download.svg" alt="seta" class="seta" />
-  </a>
-
-  <a href="mural.html" class="titulo-link">
-    Mural
-    <img src="download.svg" alt="seta" class="seta" />
-  </a>
-
-  <a href="calendario-academico.html" class="titulo-link">
-    Calendário Acadêmico
-    <img src="download.svg" alt="seta" class="seta" />
-  </a>
-</div>
-`;
-
-    profile.style.display = 'none';
-  }
-
-  // Fecha a sidebar no mobile
-  const sidebar = document.getElementById('sidebar');
-  if (window.innerWidth <= 768) {
-    sidebar.classList.remove('expandida');
-  }
-}
-
-
   </script>
+
 </body>
 </html>
