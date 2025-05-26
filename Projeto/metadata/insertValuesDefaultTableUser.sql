@@ -1,0 +1,105 @@
+insert into users (id_us,name_us,mail_us,password_us)
+values
+(1, 'Ana Maria', 'ana@teste.com', '123');
+
+insert into professor (id_pr,name_pr)
+values
+(1, 'Adilson Neves');
+(2, 'Adriana Valverde');
+(3, 'Álvaro Gonçalves');
+(4, 'André Olímpio');
+(5, 'Antonio Graça');
+(6, 'Antonio Rios');
+(7, 'Arley Souza');
+(8, 'Celso Oliveira');
+(9, 'Daniel Andrade');
+(10, 'Daniele Tavares');
+(11, 'Fabrício Carvalho');
+(12, 'Fernanda Bueno');
+(13, 'Gerson Júnior');
+(14, 'Henrique Louro');
+(15, 'Jane Verona');
+(16, 'Joanize Paiva');
+(17, 'Jorge Matsushima');
+(18, 'Karen Sarmiento');
+(19, 'Leandro Hoffmann');
+(20, 'Leonardo Vitto');
+(21, 'Lucineide Pimenta');
+(22, 'Luiz Mendes');
+(23, 'Luiz Aguiar');
+(24, 'Marcelo Sudo');
+(25, 'Maria Oliveira');
+(26, 'Mariana Rodrigues');
+(27, 'Mário Scalambrino');
+(28, 'Matheus Lorena');
+(29, 'Nanci Oliveira');
+(30, 'Neymar Dellareti');
+(31, 'Nilton Jesus');
+(32, 'Paulo Filho');
+(33, 'Pedro Silva');
+(34, 'Renato Mortin');
+(35, 'Rita Randow');
+(36, 'Ronaldo Moreira');
+(37, 'Sanzara Hassmann');
+(38, 'Selma Genari');
+(39, 'Vivian Hyodo');
+(40, 'Yara Ferreira');
+(41, 'Marcelo Bandoria');
+(42, 'Érico Pagotto');
+
+insert into room (id_ro,number_ro,level_ro,description_ro)
+values
+(1, 1, 0, Laboratório de análises ambientais);
+(2, 2, 0, Laboratório de desenho e topografia);
+(3, 3, 0, Laboratório de microbiologia ambiental);
+(4, 4, 0, Laboratório de química ambiental);
+(5, 101, 1, Laboratório de informática); 
+(6, 102, 1, Sala de aula);
+(7, 103, 1, Laboratório de informática); 
+(8, 104, 1, Sala de aula);
+(9, 105, 1, Laboratório de informática); 
+(10, 106, 1, Sala de aula);
+(11, 107, 1, Laboratório de informática); 
+(12, 108, 1, Laboratório de informática); 
+(13, 109, 1, Biblioteca);
+(14, 110, 1, Sala maker);
+(15, 201, 2, Sala de áudio e vídeo);
+(16, 202, 2, Sala de aula);
+(17, 203, 2, Laboratório de informática); 
+(18, 204, 2, Sala de aula);
+(19, 205, 2, Laboratório de informática); 
+(20, 206, 2, Sala de aula);
+(21, 207, 2, Laboratório de informática); 
+(22, 209, 2, Laboratório de informática); 
+(23, 210, 2, Sala de áudio e vídeo);
+
+INSERT INTO course (id_co, pr_id, name_co, semester_co) VALUES
+(1, 1, 'Algoritmos e Lógica de Programação', 1),
+(2, 2, 'Banco de Dados I', 2),
+(3, 3, 'Redes de Computadores', 3),
+(4, 4, 'Engenharia de Software I', 4),
+(5, 5, 'Programação Web', 2),
+(6, 6, 'Sistemas Operacionais', 3),
+(7, 7, 'Estrutura de Dados', 2),
+(8, 8, 'Banco de Dados II', 4),
+(9, 9, 'Cibersegurança', 5),
+(10, 10, 'Inteligência Artificial', 6),
+(11, 3, 'Desenvolvimento Mobile', 5),
+(12, 5, 'Gestão de Projetos', 6);
+
+INSERT INTO room_has_course (ro_id, co_id, begin_rc, end_rc, day_of_week_rc) VALUES
+(1, 1, '18:45', '22:15', 'Segunda-feira'),
+(2, 2, '18:45', '22:15', 'Terça-feira'),
+(3, 3, '18:45', '22:15', 'Quarta-feira'),
+(4, 4, '18:45', '22:15', 'Quinta-feira'),
+(5, 5, '19:35', '23:05', 'Segunda-feira'),
+(6, 6, '19:35', '23:05', 'Sexta-feira'),
+(7, 7, '18:45', '22:15', 'Quarta-feira'),
+(8, 8, '18:45', '22:15', 'Quinta-feira'),
+(1, 9, '18:45', '22:15', 'Sexta-feira'),
+(2, 10, '19:35', '23:05', 'Segunda-feira'),
+(3, 11, '19:35', '23:05', 'Terça-feira'),
+(4, 12, '19:35', '23:05', 'Quarta-feira'),
+(7, 4, '18:45', '22:15', 'Quinta-feira'),
+(6, 9, '18:45', '22:15', 'Sexta-feira'),
+(5, 8, '19:35', '23:05', 'Sexta-feira');
