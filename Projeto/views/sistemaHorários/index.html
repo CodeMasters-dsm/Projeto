@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Horários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu-toggle" onclick="toggleSidebar()">
+            <div class="barra"></div>
+            <div class="barra"></div>
+            <div class="barra"></div>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <nav class="menu-itens">
+                <ul>
+                    <a href="index.html">
+                        <li onclick="mostrarSecao('perfil')">Perfil</li>
+                    </a>
+                    <li onclick="mostrarSecao('administrativo')">Área Administrativa</li>
+                </ul>
+            </nav>
+        </div>
+
+        <main class="conteudo-principal">
+            <header class="cabecalho">
+                <h1>Sistema de Horários</h1>
+                <img src="../../assets/adm/logo-fatec.png" alt="Logo Fatec" class="logo-fatec">
+            </header>
+            <div class="filtros">
+                <button class="filtro" categoria="Curso">Curso ▸</button>
+                <button class="filtro" categoria="Turno">Turno ▸</button>
+                <button class="filtro" categoria="Matéria">Matéria ▸</button>
+                <button class="filtro" categoria="Professor">Professor(a) ▸</button>
+                <button class="filtro" categoria="Sala">Sala ▸</button>
+            </div>
+        </main>
+
+        <section class="resultado">
+
+        </section>
+        <button class="botao-editar">
+            <img src="../../assets/adm/editiconbranco.png" alt="Editar">
+        </button>
+
+        <script>
+            function toggleSidebar() {
+                const sidebar = document.getElementById('sidebar');
+                sidebar.classList.toggle('expandida');
+            }
+
+            function mostrarSecao(secao) {
+                const conteudo = document.getElementById("conteudo-dinamico");
+                const profile = document.getElementById("profile-section");
+            }
+
+        </script>
+</body>
+
+</html>
