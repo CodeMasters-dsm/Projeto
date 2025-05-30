@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Secretaria Acadêmica - Coordenador</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
 </head>
+
 <body>
   <div class="container">
     <div class="menu-toggle" onclick="toggleSidebar()">
@@ -13,7 +16,7 @@
       <div class="barra"></div>
       <div class="barra"></div>
     </div>
-  
+
     <div class="sidebar" id="sidebar">
       <nav class="menu-itens">
         <ul>
@@ -41,58 +44,6 @@
       <div id="conteudo-dinamico" class="conteudo"></div>
     </div>
   </div>
-
-  <script>
-    function toggleSidebar() {
-      const sidebar = document.getElementById('sidebar');
-      sidebar.classList.toggle('expandida');
-    }
-
-    function mostrarSecao(secao) {
-  const conteudo = document.getElementById("conteudo-dinamico");
-  const profile = document.getElementById("profile-section");
-
-  if (secao === 'perfil') {
-    conteudo.innerHTML = `
-     
-    `;
-    profile.style.display = 'flex';
-  } else if (secao === 'administrativo') {
-   conteudo.innerHTML = `
-<div class="secao-admin">
-  <a href="sistemahorarios.html" class="titulo-link">
-    Sistema de Horários
-    <img src="../../assets/adm/download.svg" alt="seta" class="seta" />
-  </a>
-
-  <a href="material-apoio.html" class="titulo-link">
-    Material de Apoio
-    <img src="../../assets/adm/download.svg" alt="seta" class="seta" />
-  </a>
-
-  <a href="mural.html" class="titulo-link">
-    Mural
-    <img src="../../assets/adm/download.svg" alt="seta" class="seta" />
-  </a>
-
-  <a href="calendario-academico.html" class="titulo-link">
-    Calendário Acadêmico
-    <img src="../../assets/adm/download.svg" alt="seta" class="seta" />
-  </a>
-</div>
-`;
-
-    profile.style.display = 'none';
-  }
-
-  // Fecha a sidebar no mobile
-  const sidebar = document.getElementById('sidebar');
-  if (window.innerWidth <= 768) {
-    sidebar.classList.remove('expandida');
-  }
-}
-
-
-  </script>
 </body>
+
 </html>

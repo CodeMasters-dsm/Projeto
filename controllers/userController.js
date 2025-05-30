@@ -4,7 +4,7 @@ class userController {
   static async create(req, res) {
     try {
       const { nome, email, password } = req.body;
-      
+
       await userService.create({ nome, email, password });
 
       res.status(201).json({ message: 'Usuário cadastrado com sucesso!' });
