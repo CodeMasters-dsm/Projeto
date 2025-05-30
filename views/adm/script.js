@@ -60,22 +60,22 @@ function mostrarSecao(secao) {
       <div class="secao-admin">
         <a href="sistemahorarios.html" class="titulo-link">
           Sistema de Horários
-          <img src="../../assets/adm/download.svg" alt="seta" class="seta" />
+          <img src="/assets/adm/download.svg" alt="seta" class="seta" />
         </a>
 
         <a href="material-apoio.html" class="titulo-link">
           Material de Apoio
-          <img src="../../assets/adm/download.svg" alt="seta" class="seta" />
+          <img src="/assets/adm/download.svg" alt="seta" class="seta" />
         </a>
 
         <a href="mural.html" class="titulo-link">
           Mural
-          <img src="../../assets/adm/download.svg" alt="seta" class="seta" />
+          <img src="/assets/adm/download.svg" alt="seta" class="seta" />
         </a>
 
         <a href="calendario-academico.html" class="titulo-link">
           Calendário Acadêmico
-          <img src="../../assets/adm/download.svg" alt="seta" class="seta" />
+          <img src="/assets/adm/download.svg" alt="seta" class="seta" />
         </a>
       </div>
 `;
