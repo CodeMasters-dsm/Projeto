@@ -8,3 +8,11 @@ import {
 } from '../controllers/roomController.js'
 
 const router = express.Router()
+
+router.get('/', getRoom)
+router.get('/:id', getRoomById)
+router.post('/', createRoom)
+router.put('/:id', updateRoom)
+router.delete('/:id', deleteRoom)
+
+export default router
