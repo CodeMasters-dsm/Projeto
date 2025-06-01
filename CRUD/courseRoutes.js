@@ -7,3 +7,5 @@ import {
   updateCourse,
   deleteCourse
 } from '../controllers/courseController.js'
+
+const router = express.Router()
