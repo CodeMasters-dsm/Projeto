@@ -24,3 +24,14 @@ export async function getProfessorById(req, res) {
     res.status(500).json({ error: error.message })
   }
 }
+
+// Criar professor (CREATE)
+export async function createProfessor(req, res) {
+  const { name_pr } = req.body
+  try {
+    const result = await db.query('INSERT INTO professor (name_pr) VALUES ($1) RETURNING *', [name_pr])
+    res.status(201).json(result.rows[0])
+  } catch (error) {
+    res.status(500).json({ error: error.message })
+  }
+}
