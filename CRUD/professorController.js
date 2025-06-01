@@ -53,3 +53,17 @@ export async function updateProfessor(req, res) {
     res.status(500).json({ error: error.message })
   }
 }
+
+// Deletar professor (DELETE)
+export async function deleteProfessor(req, res) {
+  const { id } = req.params
+  try {
+    const result = await db.query('DELETE FROM professor WHERE id_pr = $1 RETURNING *', [id])
+    if (result.rows.length === 0) {
+      return res.status(404).json({ error: 'Professor não encontrado' })
+    }
+    res.json({ message: 'Professor deletado com sucesso' })
+  } catch (error) {
+    res.status(500).json({ error: error.message })
+  }
+}
