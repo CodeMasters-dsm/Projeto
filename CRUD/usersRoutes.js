@@ -8,3 +8,4 @@ import {
   deleteUsers
 } from '../controllers/usersController.js'
 
+const router = express.Router()
