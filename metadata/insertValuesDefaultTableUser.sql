@@ -291,7 +291,7 @@ INSERT INTO room_has_course (ro_id, co_id, begin_rc, end_rc, day_of_week_rc) VAL
 (210, 91, 19:35, 23:05, quinta-feira);
 (210, 89, 18:45, 21:15, sexta-feira);
 
-INSERT INTO degree (iddegree, name, acronym, period) VALUES
-(1, Desenvolvimento de Software Multiplataforma, DSM, Noturno);
-(2, Geoprocessamento, Geo, Noturno);
-(3, Meio Ambiente e Recursos Hídricos, MARH, Noturno);
+INSERT INTO degree (iddegree, name, period) VALUES
+(1, Desenvolvimento de Software Multiplataforma, Noturno);
+(2, Geoprocessamento, Noturno);
+(3, Meio Ambiente e Recursos Hídricos, Noturno);
