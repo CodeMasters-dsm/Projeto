@@ -1,4 +1,4 @@
-<h1 align="center"> Projeto ABP</h1>
+<h1 align="center"> Projeto ABP </h1>
 
 ## <p> Equipe: CodeMasters </p>
 
@@ -40,7 +40,7 @@ Clique [aqui](https://trello.com/invite/b/67e1e9ab2a6046abcba03900/ATTI50b8625e8
 
 | REQUISITO FUNCIONAL_ID | REQUISITOS                                                                                                 | SPRINTS |
 |------------------------|------------------------------------------------------------------------------------------------------------|---------|
-| RF01                 | Fazer a ingestão de dados no sistema a partir de uma fonte tal como um arquivo CSV                         | #1 #2   |
+| RF01                 | Fazer a ingestão de dados no sistema a partir de uma fonte tal como um arquivo CSV                         | #3   |
 | RF02                 | (opcional) Fazer o gerenciamento dos dados do sistema (CRUD) através da interface da aplicação, permitindo que a secretaria acadêmica/coordenação altere os dados por meio de uma tela da aplicação |  #3  |
 | RF03                 | Garantir que o cadastro ou a ingestão de dados satisfaça as regras básicas de alocação da faculdade (ex.: duas turmas diferentes não podem ser alocadas na mesma sala, e um professor não pode ter duas turmas no mesmo horário) | #2   |
 | RF04                 | Permitir que o sistema exporte relatórios/mapas de ambientes e horários em formato PDF                     |  #3  |
@@ -51,8 +51,8 @@ Clique [aqui](https://trello.com/invite/b/67e1e9ab2a6046abcba03900/ATTI50b8625e8
 
 | REQUISITO NÃO_FUNCIONAL_ID | REQUISITOS                                                                                          | SPRINTS     |
 |----------------------------|-----------------------------------------------------------------------------------------------------|-------------|
-| RNF01                    | Requisito de interface: exibir um mapa de salas com a opção interativa de clicar e visualizar a situação do ambiente (ex. aulas alocadas ao longo dos turnos do dia) |  #1  |
-| RNF02                    | Garantir que o sistema seja responsivo, mantendo um layout consistente em dispositivos móveis e preservando a arquitetura de informação da interface | #1    |
+| RNF01                    | Requisito de interface: exibir um mapa de salas com a opção interativa de clicar e visualizar a situação do ambiente (ex. aulas alocadas ao longo dos turnos do dia) |  #1 #2  |
+| RNF02                    | Garantir que o sistema seja responsivo, mantendo um layout consistente em dispositivos móveis e preservando a arquitetura de informação da interface | #1 #2   |
 
 <br>
 
@@ -103,17 +103,17 @@ Foi decidido construir os principais elementos do protótipo das páginas atrav�
 ## • Sprint Backlog
 <br>
 
-| ID REFERENCIA |Prioridade  | Estimativa Fibonacci | REQUISITO DA SPRINT| Responsável |TAREFA INICIADA | TAREFA CONCLUIDA | 
-|---------------|------------|----------------------|--------------------|-------------|----------------|------------------|
-|  RF01       | Média (2) | 1 | Estabelecer os elementos essenciais das páginas para o desenvolvimento dos protótipos iniciais | Gabrielly | ✔  | ✔  |
-|  RNF02      | Baixa (5) | 2 | Criar os componentes fundamentais com base no Diagrama de Casos de Uso e Diagrama de Classes criado por meio do Astah UML | Eric e Marcelo | ✔  | ✔  |
-|  RF01       | Média (2) | 2 | Realizar uma reunião para fomentar a inspiração e a criatividade em torno do projeto | Eric  | ✔  | ✔  |
-|  RNF02      | Alta (1) | 5 | Projetar as interfaces no Figma, abrangendo as versões para desktop e mobile | Pedro e Marcelo|  ✔  | ✔  |
-|  RF05       | Alta (1) | 3 | Levantar as informações essenciais que serão apresentadas no site | Pedro   | ✔  |✔  |
-|  RNF02      | Média (2) | 2 | Definir a harmonia visual do protótipo (como a paleta de cores), garantindo uma experiência suave e intuitiva | Manuela |  ✔  | ✔  |
-|  RNF01      | Média (2) | 3 | Delimitar as interações e funcionalidades do site por meio do Figma | Manuela  | ✔  | ✔  |
-|  RNF01      | Alta (1) | 2 | Verificar a fluidez da navegação, assegurando uma experiência de usuário primorosa | Gabrielly |  ✔  | ✔  |
-|  -       | Baixa (4) | 2 | Organizar a documentação no GitHub | Eric e Gabrielly |  ✔  | ✔  |
+| ID REFERENCIA | STORY POINTS | REQUISITO DA SPRINT| Responsável |TAREFA INICIADA | TAREFA CONCLUIDA | 
+|---------------|------------|----------------------|--------------------|-------------|----------------|
+|  RF01        | 1 | Estabelecer os elementos essenciais das páginas para o desenvolvimento dos protótipos iniciais | Gabrielly | ✔  | ✔  |
+|  RNF02       | 2 | Criar os componentes fundamentais com base no Diagrama de Casos de Uso e Diagrama de Classes criado por meio do Astah UML | Eric e Marcelo | ✔  | ✔  |
+|  RF01        | 2 | Realizar uma reunião para fomentar a inspiração e a criatividade em torno do projeto | Eric  | ✔  | ✔  |
+|  RNF02       | 5 | Projetar as interfaces no Figma, abrangendo as versões para desktop e mobile | Pedro e Marcelo|  ✔  | ✔  |
+|  RF05        | 3 | Levantar as informações essenciais que serão apresentadas no site | Pedro   | ✔  |✔  |
+|  RNF02       | 2 | Definir a harmonia visual do protótipo (como a paleta de cores), garantindo uma experiência suave e intuitiva | Manuela |  ✔  | ✔  |
+|  RNF01       | 3 | Delimitar as interações e funcionalidades do site por meio do Figma | Manuela  | ✔  | ✔  |
+|  RNF01      | 2 | Verificar a fluidez da navegação, assegurando uma experiência de usuário primorosa | Gabrielly |  ✔  | ✔  |
+|  -          | 2 | Organizar a documentação no GitHub | Eric e Gabrielly |  ✔  | ✔  |
 
 <br>
 <br>
@@ -155,19 +155,19 @@ Foi decidido construir os principais elementos do protótipo das páginas atrav�
 ## • Sprint Backlog
 <br>
 
-| ID REFERENCIA |Prioridade  | Estimativa Fibonacci | REQUISITO DA SPRINT| Responsável |TAREFA INICIADA | TAREFA CONCLUIDA | 
-|---------------|------------|----------------------|--------------------|-------------|----------------|------------------|
-| RNF01/RNF02 | Alta (1) | 5 | Criar a versão em desktop da página inicial utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Pedro | ✔  | ✔  |
-| RNF01/RNF02 | Alta (1) | 5 | Criar a versão em mobile da página inicial utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Pedro | ✔  | ✔  |
-| RNF01/RNF02 | Alta (1) | 5 | Criar a versão em desktop da página de login utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Eric  | ✔  | ✔  |
-| RNF01/RNF02 | Alta (1) | 5 | Criar a versão em mobile da página de login utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Eric |  ✔  | ✔  |
-|  RF01     | Baixa (4) | 5 | Criar Modelo Relacional do Banco de Dados no DB Designer | Marcelo   | ✔  |✔  |
-|  RF01     | Alta (1) | 3 | Inserção de informações no banco de dados com o uso de tabelas no PgAdmin | Gabrielly |  ✔  | ✔  |
-|  -  | Média (2) | 1 | Definição de linguagens e ferramentas usadas no backend | Manuela  | ✔  | ✔  |
-|  RF03    | Alta (1) | 3 | Estabelecer conexão entre o banco de dados e o backend usando Node.js | Gabrielly e Marcelo |  ✔  | ❌  |
-|  RF02    | Alta (1) | 5 | Implementar um recurso completo com CRUD | Manuela  | ✔  | ❌  |
-| RF02/RF03 | Média (2) | 3 | Testar rotas manualmente usando Postman | Gabrielly |  ✔  | ❌  |
-|  -  | Baixa (5) | 2 | Organizar a documentação no GitHub | Manuela e Gabrielly |  ✔  | ✔  |
+| ID REFERENCIA |STORY POINTS | REQUISITO DA SPRINT| Responsável |TAREFA INICIADA | TAREFA CONCLUIDA | 
+|---------------|------------|----------------------|--------------------|-------------|----------------|
+| RNF01/RNF02  | 5 | Criar a versão em desktop da página inicial utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Pedro | ✔  | ✔  |
+| RNF01/RNF02  | 5 | Criar a versão em mobile da página inicial utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Pedro | ✔  | ✔  |
+| RNF01/RNF02  | 5 | Criar a versão em desktop da página de login utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Eric  | ✔  | ✔  |
+| RNF01/RNF02  | 5 | Criar a versão em mobile da página de login utilizando HTML, aplicando o estilo com CSS e implementando funcionalidades em JavaScript | Eric |  ✔  | ✔  |
+|  RF01      | 5 | Criar Modelo Relacional do Banco de Dados no DB Designer | Marcelo   | ✔  |✔  |
+|  RF01      | 3 | Inserção de informações no banco de dados com o uso de tabelas no PgAdmin | Gabrielly |  ✔  | ✔  |
+|  -   | 1 | Definição de linguagens e ferramentas usadas no backend | Manuela  | ✔  | ✔  |
+|  RF03    | 3 | Estabelecer conexão entre o banco de dados e o backend usando Node.js | Gabrielly e Marcelo |  ✔  | ❌  |
+|  RF02     | 5 | Implementar um recurso completo com CRUD | Manuela  | ✔  | ❌  |
+| RF02/RF03  | 3 | Testar rotas manualmente usando Postman | Gabrielly |  ✔  | ❌  |
+|  -   | 2 | Organizar a documentação no GitHub | Manuela e Gabrielly |  ✔  | ✔  |
 
 <br>
 
@@ -214,17 +214,18 @@ Foi decidido construir os principais elementos do protótipo das páginas atrav�
 ## • Sprint Backlog
 <br>
 
-| ID REFERENCIA |Prioridade  | Estimativa Fibonacci | REQUISITO DA SPRINT| Responsável |TAREFA INICIADA | TAREFA CONCLUIDA | 
-|---------------|------------|----------------------|--------------------|-------------|----------------|------------------|
-| RNF01/RNF02 | Alta (1) | 5 | Criação da página "Sistema de Horários" (HTML e CSS). | Gabrielly e Eric | ✔  | ⏳  |
-| RNF01/RNF02 | Alta (1) | 5 | Criação das demais páginas da aquisição (HTML e CSS). | Eric e Marcelo | ✔  | ⏳  |
-| RF01 | Média (2) | 2 | Complementação dos dados no Banco de Dados. | Pedro  | ✔  | ⏳  |
-| RP02 | Alta (1) | 5 | Elaboração da estrutura do backend (JavaScript e Node.js). | Manuela e Pedro |  ⏳  | ⏳  |
-|  RF02     | Alta (1) | 8 | Implementação dos recursos de CRUD. | Manuela e Pedro   | ⏳  | ⏳  |
-|  RF03     | Alta (1) | 3 | Estabelecimento da conexão entre o Banco de Dados e o Backend. | Eric e Marcelo |  ⏳  | ⏳  |
-| RF02/RF03 | Média (2) | 3 | Testagem das rotas de aplicação. | Gabrielly e Marcelo  | ⏳  | ⏳  |
-|  -     | Baixa (4) | 2 | Revisão geral, testes finais e ajustes. | Gabrielly e Manuela |  ⏳  | ⏳  |
-|  -     | Baixa (5) | 2 | Documentação no GitHub | Gabrielly e Manuela  | ⏳  | ⏳  |
+| ID REFERENCIA | Prioridade   | REQUISITO DA SPRINT | Responsável | TAREFA INICIADA | TAREFA CONCLUIDA | 
+|---------------|------------|----------------------|--------------------|-------------|----------------|
+| RNF01/RNF02 | 5 | Criação da página "Sistema de Horários"  | Eric | ✔  | ⏳  |
+| RNF01/RNF02  | 5 | Criação das demais páginas da aquisição (HTML e CSS) | Gabrielly e Eric | ✔  | ✔  |
+| RF01  | 2 | Complementação dos dados no Banco de Dados | Pedro  | ✔  | ✔  |
+| RP02  | 5 | Elaboração da estrutura do backend (JavaScript e Node.js) | Manuela  |  ✔  | ⏳  |
+|  RF02      | 8 | Implementação dos recursos de CRUD |  Pedro   | ✔  | ✔  |
+|  RF01      | 2 | Fazer a ingestão de dados no sistema a partir de um arquivo CSV |  Gabrielly   | ✔  | ✔  |
+|  RF03      | 3 | Estabelecimento da conexão entre o Banco de Dados e o Backend |  Marcelo |  ⏳  | ⏳  |
+| RF02/RF03  | 3 | Testagem das rotas de aplicação | Gabrielly e Marcelo  | ⏳  | ⏳  |
+|  -     | 2 | Revisão geral, testes finais e ajustes | Gabrielly e Manuela |  ⏳  | ⏳  |
+|  -      | 2 | Documentação no GitHub | Gabrielly e Manuela  | ✔  | ⏳  |
 
 <br>
 
