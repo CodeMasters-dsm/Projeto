@@ -1,6 +1,6 @@
 insert into users (id_us,name_us,mail_us,password_us)
 values
-(1, 'Ana Maria', 'ana@teste.com', '123');
+(1, 'João', 'joao@teste.com', '1234');
 
 insert into professor (id_pr,name_pr)
 values
