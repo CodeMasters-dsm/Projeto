@@ -24,6 +24,13 @@ create table if not exists users (
 	primary key (id_us)
 );
 
+create table if not exists degree (
+	id_de integer not null,
+	name_de VARCHAR(50),
+	period_de VARCHAR(20),
+	primary key (id_de)
+);
+
 create table if not exists professor (
 	id_pr integer not null,
 	name_pr VARCHAR(100),
@@ -34,7 +41,6 @@ create table if not exists room (
 	id_ro integer not null,
 	number_ro integer not null,
 	level_ro integer not null,
-	type_ro VARCHAR(50),
 	description_ro VARCHAR(255),
 	primary key (id_ro)
 );
