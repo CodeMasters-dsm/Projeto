@@ -46,20 +46,25 @@ create table if not exists room (
 );
 
 create table if not exists course (
-	id_co integer,
-	pr_id integer,
-	name_co VARCHAR(50),
+	id_co integer not null,
+	pr_id integer not null,
+	de_id integer not null,
+	name_co VARCHAR(100),
 	semester_co integer not null,
 	primary key (id_co),
-	foreign key (pr_id) references professor (id_pr)
+	foreign key (pr_id) references professor (id_pr),
+    foreign key (de_id) references degree (id_de)
 );
 
+
 create table if not exists room_has_course (
-	ro_id integer,
-	co_id integer,
+	ro_id integer not null,
+	co_id integer not null,
 	begin_rc TIME,
 	end_rc TIME,
 	day_of_week_rc VARCHAR(20),
 	foreign key (ro_id) references room (id_ro),
 	foreign key (co_id) references course (id_co)
 );
+
+
