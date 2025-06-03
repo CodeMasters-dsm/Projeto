@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    background: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  main {
+    margin-left: 60px;
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    color: #a00;
+    margin-bottom: 10px;
+  }
+  
+  ul li {
+    background: #e7e6e6;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    list-style: none;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 30px;
+    position: relative;
+  }
+  
+  .header {
+    text-align: right;
+  }
+  
+  .logo-fatec {
+    width: 100px;
+    height: auto;
+  }
+ 
+  .secao-admin {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 0;
+    margin-left: 100px;
+  }
+  
+  .titulo-link {
+    font-size: 24px;
+    color: #a30000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+  }
+  
+  .titulo-link:hover {
+    transform: translateX(5px);
+    text-decoration: underline;
+  }
+  
+  .seta {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .titulo-linha {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .titulo-link {
+    font-size: 24px;
+    color: #a30000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+  }
+  
+  .titulo-link:hover {
+    transform: translateX(5px);
+    text-decoration: underline;
+  }
