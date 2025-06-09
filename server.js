@@ -23,6 +23,4 @@ app.use(
 
 app.use('/', routes);
 
-app.listen(port, () => {
-  console.log(`Servidor rodando em http://localhost:${port}`);
-});
+module.exports = { app, port };

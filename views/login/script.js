@@ -1,16 +1,30 @@
-document.getElementById("loginForm").addEventListener("submit", function (e) {
-  e.preventDefault();
+async function onLogin() {
+    const user = document.getElementById('username').value;
+    const pass = document.getElementById('password').value;
+    const message = document.getElementById('message');
 
-  const user = document.getElementById("username").value;
-  const pass = document.getElementById("password").value;
-  const errorMsg = document.getElementById("errorMsg");
-  errorMsg.textContent = "";
+    try {
+        const response = await fetch('/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: new URLSearchParams({
+                username: user,
+                password: pass,
+            }),
+        });
 
-  window.location.assign('../adm/index.html');
-
-  if (user === "joao@teste.com" && pass === "1234") {
-    errorMsg.textContent = "";
-  } else {
-    errorMsg.textContent = "Usuário ou senha incorretos.";
-  }
-});
+        if (response.redirected) {
+            window.location.href = response.url;
+        } else {
+            const text = await response.text();
+            message.style.color = 'red';
+            message.textContent = text;
+        }
+    } catch (error) {
+        console.error('Erro ao fazer login:', error);
+        message.style.color = 'red';
+        message.textContent = 'Erro ao tentar fazer login.';
+    }
+}

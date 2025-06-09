@@ -19,7 +19,7 @@ class LoginController {
       req.session.userId = user.id;
       req.session.username = user.username;
 
-      res.redirect('/home');
+      res.redirect('/homePage');
     } catch (error) {
       console.error('Erro no login:', error);
       res.status(500).send('Erro interno do servidor');

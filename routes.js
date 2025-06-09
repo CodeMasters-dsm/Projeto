@@ -27,65 +27,65 @@ router.get('/logout', loginController.logout);
 router.post('/createUser', userController.create);
 router.post('/listUsers', userController.listUsers);
 
-//Course
-const {
-  getCourse,
-  getCourseById,
-  createCourse,
-  updateCourse,
-  deleteCourse
-} = require('./controllers/courseController');
+// //Course
+// const {
+//   getCourse,
+//   getCourseById,
+//   createCourse,
+//   updateCourse,
+//   deleteCourse
+// } = require('./controllers/courseController');
 
 
-router.get('/', getCourse);
-router.get('/:id', getCourseById);
-router.post('/', createCourse);
-router.put('/:id', updateCourse);
-router.delete('/:id', deleteCourse);
+// router.get('/', getCourse);
+// router.get('/:id', getCourseById);
+// router.post('/', createCourse);
+// router.put('/:id', updateCourse);
+// router.delete('/:id', deleteCourse);
 
-//Professor
-const {
-  createProfessor,
-  getProfessors,
-  getProfessorById,
-  updateProfessor,
-  deleteProfessor
-} = require('./controllers/professorController');
+// //Professor
+// const {
+//   createProfessor,
+//   getProfessors,
+//   getProfessorById,
+//   updateProfessor,
+//   deleteProfessor
+// } = require('./controllers/professorController');
 
-router.post('/', createProfessor);
-router.get('/', getProfessors);
-router.get('/:id', getProfessorById);
-router.put('/:id', updateProfessor);
-router.delete('/:id', deleteProfessor);
+// router.post('/', createProfessor);
+// router.get('/', getProfessors);
+// router.get('/:id', getProfessorById);
+// router.put('/:id', updateProfessor);
+// router.delete('/:id', deleteProfessor);
 
-//Room
-const {
-  getRoom,
-  getRoomById,
-  createRoom,
-  updateRoom,
-  deleteRoom
-} = require('./controllers/roomController');
+// //Room
+// const {
+//   getRoom,
+//   getRoomById,
+//   createRoom,
+//   updateRoom,
+//   deleteRoom
+// } = require('./controllers/roomController');
 
-router.get('/', getRoom);
-router.get('/:id', getRoomById);
-router.post('/', createRoom);
-router.put('/:id', updateRoom);
-router.delete('/:id', deleteRoom);
+// router.get('/', getRoom);
+// router.get('/:id', getRoomById);
+// router.post('/', createRoom);
+// router.put('/:id', updateRoom);
+// router.delete('/:id', deleteRoom);
 
-//Users
-const {
-  getUsers,
-  getUsersById,
-  createUsers,
-  updateUsers,
-  deleteUsers
-} = require('./controllers/usersController');
+// //Users
+// const {
+//   getUsers,
+//   getUsersById,
+//   createUsers,
+//   updateUsers,
+//   deleteUsers
+// } = require('./controllers/usersController');
 
-router.get('/', getUsers);
-router.get('/:id', getUsersById);
-router.post('/', createUsers);
-router.put('/:id', updateUsers);
-router.delete('/:id', deleteUsers);
+// router.get('/', getUsers);
+// router.get('/:id', getUsersById);
+// router.post('/', createUsers);
+// router.put('/:id', updateUsers);
+// router.delete('/:id', deleteUsers);
 
 module.exports = router;
