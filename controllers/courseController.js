@@ -1,67 +1,78 @@
-//Arrumar de onde ele está pegando (NOME CORRETO)
-const { db } = require( '../db/db' );
+const path = require('path');
+const CourseService = require('../services/courseService');
 
- async function getCourses(req, res) {
-  try {
-    const result = await db.query('SELECT * FROM course')
-    res.json(result.rows)
-  } catch (error) {
-    res.status(500).json({ error: error.message })
-  }
-};
-
- async function getCourseById(req, res) {
-  const { id } = req.params
-  try {
-    const result = await db.query('SELECT * FROM course WHERE id_co = $1', [id])
-    if (result.rows.length === 0) {
-      return res.status(404).json({ error: 'Curso não encontrado' })
+class CourseController {
+  static async getCourses(req, res) {
+    try {
+      const courses = await CourseService.getAllCourses();
+      res.send(courses);
+    } catch (error) {
+      console.error('Erro ao buscar cursos:', error);
+      res.status(500).send('Erro interno do servidor');
     }
-    res.json(result.rows[0])
-  } catch (error) {
-    res.status(500).json({ error: error.message })
   }
-};
 
- async function createCourse(req, res) {
-  const { pr_id, name_co, semester_co } = req.body
-  try {
-    const result = await db.query(
-      'INSERT INTO course (pr_id, name_co, semester_co) VALUES ($1, $2, $3) RETURNING *',
-      [pr_id, name_co, semester_co]
-    )
-    res.status(201).json(result.rows[0])
-  } catch (error) {
-    res.status(500).json({ error: error.message })
-  }
-};
+  static async getCourseById(req, res) {
+    const { id } = req.params;
 
- async function updateCourse(req, res) {
-  const { id } = req.params
-  const { pr_id, name_co, semester_co } = req.body
-  try {
-    const result = await db.query(
-      'UPDATE course SET pr_id = $1, name_co = $2, semester_co = $3 WHERE id_co = $4 RETURNING *',
-      [pr_id, name_co, semester_co, id]
-    )
-    if (result.rows.length === 0) {
-      return res.status(404).json({ error: 'Curso não encontrado' })
+    try {
+      const course = await CourseService.getCourseById(id);
+
+      if (!course) {
+        return res.send('<h3>Curso não encontrado. <a href="/courses">Voltar</a></h3>');
+      }
+
+      res.send(course);
+    } catch (error) {
+      console.error('Erro ao buscar curso por ID:', error);
+      res.status(500).send('Erro interno do servidor');
     }
-    res.json(result.rows[0])
-  } catch (error) {
-    res.status(500).json({ error: error.message })
   }
-};
 
- async function deleteCourse(req, res) {
-  const { id } = req.params
-  try {
-    const result = await db.query('DELETE FROM course WHERE id_co = $1 RETURNING *', [id])
-    if (result.rows.length === 0) {
-      return res.status(404).json({ error: 'Curso não encontrado' })
+  static async createCourse(req, res) {
+    const { pr_id, name_co, semester_co } = req.body;
+
+    try {
+      const course = await CourseService.createCourse(pr_id, name_co, semester_co);
+      res.redirect('/courses');
+    } catch (error) {
+      console.error('Erro ao criar curso:', error);
+      res.status(500).send('Erro interno do servidor');
     }
-    res.json({ message: 'Curso deletado com sucesso' })
-  } catch (error) {
-    res.status(500).json({ error: error.message })
   }
-};
+
+  static async updateCourse(req, res) {
+    const { id } = req.params;
+    const { pr_id, name_co, semester_co } = req.body;
+
+    try {
+      const updated = await CourseService.updateCourse(id, pr_id, name_co, semester_co);
+
+      if (!updated) {
+        return res.send('<h3>Curso não encontrado para atualização. <a href="/courses">Voltar</a></h3>');
+      }
+
+      res.redirect('/courses');
+    } catch (error) {
+      console.error('Erro ao atualizar curso:', error);
+      res.status(500).send('Erro interno do servidor');
+    }
+  }
+
+  static async deleteCourse(req, res) {
+    const { id } = req.params;
+
+    try {
+      const deleted = await CourseService.deleteCourse(id);
+
+      if (!deleted) {
+        return res.send('<h3>Curso não encontrado para exclusão. <a href="/courses">Voltar</a></h3>');
+      }
+
+      res.redirect('/courses');
+    } catch (error) {
+      console.error('Erro ao deletar curso:', error);
+      res.status(500).send('Erro interno do servidor');
+    }
+  }
+}
