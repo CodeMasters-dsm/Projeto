@@ -1,4 +1,3 @@
-//Arrumar de onde ele está pegando (NOME CORRETO)
 const { db } = require( '../db/db' );
 
  async function getUsers(req, res) {
