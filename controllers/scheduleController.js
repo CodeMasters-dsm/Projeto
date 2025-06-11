@@ -1,21 +1,43 @@
-const scheduleServices = require('../services/scheduleService');
+const path = require('path');
+const ScheduleService = require('../services/scheduleService');
 
-async function listByTurma(req, res) {
-    try {
-        const schedules = await scheduleServices.getScheduleByTurma(req.params.id);
-        res.json(schedules);
-    } catch (error) {
-        res.status(500).json({ error: error.message });
-    }
-}
+class ScheduleController {
+  static async listByTurma(req, res) {
+    const { id } = req.params;
 
-async function listByProfessor(req, res) {
     try {
-        const schedules = await scheduleServices.getScheduleByProfessor(req.params.id);
+      const schedules = await ScheduleService.getScheduleByTurma(id);
+
+      if (!schedules || schedules.length === 0) {
+        return res.send('<h3>Horários da turma não encontrados. <a href="/homePage">Voltar</a></h3>');
+      }
+
       res.json(schedules);
     } catch (error) {
-        res.status(500).json({ error: error.message });
+      console.error('Erro ao buscar horários por turma:', error);
+      res.status(500).send('Erro interno do servidor');
     }
+  }
+
+  static async listByProfessor(req, res) {
+    const { id } = req.params;
+
+    try {
+      const schedules = await ScheduleService.getScheduleByProfessor(id);
+
+      if (!schedules || schedules.length === 0) {
+        return res.send('<h3>Horários do professor não encontrados. <a href="/homePage">Voltar</a></h3>');
+      }
+
+      res.json(schedules);
+    } catch (error) {
+      console.error('Erro ao buscar horários por professor:', error);
+      res.status(500).send('Erro interno do servidor');
+    }
+  }
 }
 
-module.exports = { listByTurma, listByProfessor };
+module.exports = ScheduleController;
+
+
+module.exports = CourseController;
