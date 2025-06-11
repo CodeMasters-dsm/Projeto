@@ -28,64 +28,35 @@ router.post('/createUser', userController.create);
 router.post('/listUsers', userController.listUsers);
 
 // //Course
-// const {
-//   getCourse,
-//   getCourseById,
-//   createCourse,
-//   updateCourse,
-//   deleteCourse
-// } = require('./controllers/courseController');
-
-
-// router.get('/', getCourse);
-// router.get('/:id', getCourseById);
-// router.post('/', createCourse);
-// router.put('/:id', updateCourse);
-// router.delete('/:id', deleteCourse);
+router.get('/course', courseController.getCourses);
+router.get('/course/:id', courseController.getCourseById);
+router.post('/course', courseController.createCourse);
+router.put('/course/:id', courseController.updateCourse);
+router.delete('/course/:id', courseController.deleteCourse);
 
 // //Professor
-// const {
-//   createProfessor,
-//   getProfessors,
-//   getProfessorById,
-//   updateProfessor,
-//   deleteProfessor
-// } = require('./controllers/professorController');
-
-// router.post('/', createProfessor);
-// router.get('/', getProfessors);
-// router.get('/:id', getProfessorById);
-// router.put('/:id', updateProfessor);
-// router.delete('/:id', deleteProfessor);
+router.get('/professors', professorController.getProfessors);
+router.get('/professors/:id', professorController.getProfessorById);
+router.post('/professors', professorController.createProfessor);
+router.put('/professors/:id', professorController.updateProfessor);
+router.delete('/professors/:id', professorController.deleteProfessor);
 
 // //Room
-// const {
-//   getRoom,
-//   getRoomById,
-//   createRoom,
-//   updateRoom,
-//   deleteRoom
-// } = require('./controllers/roomController');
-
-// router.get('/', getRoom);
-// router.get('/:id', getRoomById);
-// router.post('/', createRoom);
-// router.put('/:id', updateRoom);
-// router.delete('/:id', deleteRoom);
+router.get('/rooms', roomController.getRooms);
+router.get('/rooms/:id', roomController.getRoomById);
+router.post('/rooms', roomController.createRoom);
+router.put('/rooms/:id', roomController.updateRoom);
+router.delete('/rooms/:id', roomController.deleteRoom);
 
 // //Users
-// const {
-//   getUsers,
-//   getUsersById,
-//   createUsers,
-//   updateUsers,
-//   deleteUsers
-// } = require('./controllers/usersController');
+router.get('/users', usersController.getUsers);
+router.get('/users/:id', usersController.getUserById);
+router.post('/users', usersController.createUser);
+router.put('/users/:id', usersController.updateUser);
+router.delete('/users/:id', usersController.deleteUser);
 
-// router.get('/', getUsers);
-// router.get('/:id', getUsersById);
-// router.post('/', createUsers);
-// router.put('/:id', updateUsers);
-// router.delete('/:id', deleteUsers);
+// //Schedule
+router.get('/schedule/turma/:id', scheduleController.listByTurma);
+router.get('/schedule/professor/:id', scheduleController.listByProfessor);
 
 module.exports = router;
