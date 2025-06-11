@@ -1,69 +1,80 @@
-//Arrumar de onde ele está pegando (NOME CORRETO)
-const { db } = require( '../db/db' );
+const path = require('path');
+const ProfessorService = require('../services/professorService');
 
-// Listar todos os professores (READ)
- async function getProfessors(req, res) {
-  try {
-    const result = await db.query('SELECT * FROM professor')
-    res.json(result.rows)
-  } catch (error) {
-    res.status(500).json({ error: error.message })
-  }
-};
-
-// Buscar professor por ID (READ)
- async function getProfessorById(req, res) {
-  const { id } = req.params
-  try {
-    const result = await db.query('SELECT * FROM professor WHERE id_pr = $1', [id])
-    if (result.rows.length === 0) {
-      return res.status(404).json({ error: 'Professor não encontrado' })
+class ProfessorController {
+  static async getProfessors(req, res) {
+    try {
+      const professors = await ProfessorService.getAllProfessors();
+      res.send(professors);
+    } catch (error) {
+      console.error('Erro ao listar professores:', error);
+      res.status(500).send('Erro interno do servidor');
     }
-    res.json(result.rows[0])
-  } catch (error) {
-    res.status(500).json({ error: error.message })
   }
-};
 
-// Criar professor (CREATE)
- async function createProfessor(req, res) {
-  const { name_pr } = req.body
-  try {
-    const result = await db.query('INSERT INTO professor (name_pr) VALUES ($1) RETURNING *', [name_pr])
-    res.status(201).json(result.rows[0])
-  } catch (error) {
-    res.status(500).json({ error: error.message })
-  }
-};
+  static async getProfessorById(req, res) {
+    const { id } = req.params;
 
-// Atualizar professor (UPDATE)
- async function updateProfessor(req, res) {
-  const { id } = req.params
-  const { name_pr } = req.body
-  try {
-    const result = await db.query(
-      'UPDATE professor SET name_pr = $1 WHERE id_pr = $2 RETURNING *',
-      [name_pr, id]
-    )
-    if (result.rows.length === 0) {
-      return res.status(404).json({ error: 'Professor não encontrado' })
+    try {
+      const professor = await ProfessorService.getProfessorById(id);
+
+      if (!professor) {
+        return res.send('<h3>Professor não encontrado. <a href="/professors">Voltar</a></h3>');
+      }
+
+      res.send(professor);
+    } catch (error) {
+      console.error('Erro ao buscar professor por ID:', error);
+      res.status(500).send('Erro interno do servidor');
     }
-    res.json(result.rows[0])
-  } catch (error) {
-    res.status(500).json({ error: error.message })
   }
-};
 
-// Deletar professor (DELETE)
- async function deleteProfessor(req, res) {
-  const { id } = req.params
-  try {
-    const result = await db.query('DELETE FROM professor WHERE id_pr = $1 RETURNING *', [id])
-    if (result.rows.length === 0) {
-      return res.status(404).json({ error: 'Professor não encontrado' })
+  static async createProfessor(req, res) {
+    const { name_pr } = req.body;
+
+    try {
+      await ProfessorService.createProfessor(name_pr);
+      res.redirect('/professors');
+    } catch (error) {
+      console.error('Erro ao criar professor:', error);
+      res.status(500).send('Erro interno do servidor');
     }
-    res.json({ message: 'Professor deletado com sucesso' })
-  } catch (error) {
-    res.status(500).json({ error: error.message })
   }
-};
+
+  static async updateProfessor(req, res) {
+    const { id } = req.params;
+    const { name_pr } = req.body;
+
+    try {
+      const updated = await ProfessorService.updateProfessor(id, name_pr);
+
+      if (!updated) {
+        return res.send('<h3>Professor não encontrado para atualização. <a href="/professors">Voltar</a></h3>');
+      }
+
+      res.redirect('/professors');
+    } catch (error) {
+      console.error('Erro ao atualizar professor:', error);
+      res.status(500).send('Erro interno do servidor');
+    }
+  }
+
+  static async deleteProfessor(req, res) {
+    const { id } = req.params;
+
+    try {
+      const deleted = await ProfessorService.deleteProfessor(id);
+
+      if (!deleted) {
+        return res.send('<h3>Professor não encontrado para exclusão. <a href="/professors">Voltar</a></h3>');
+      }
+
+      res.redirect('/professors');
+    } catch (error) {
+      console.error('Erro ao deletar professor:', error);
+      res.status(500).send('Erro interno do servidor');
+    }
+  }
+}
+
+module.exports = ProfessorController;
