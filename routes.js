@@ -17,7 +17,7 @@ router.get('/:page', (req, res) => {
 });
 
 router.get('/', (req, res) => {
-  res.redirect('/login');
+  res.redirect('/homePage');
 });
 
 
