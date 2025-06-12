@@ -1,10 +1,10 @@
 const path = require('path');
-const ProfessorService = require('../services/professorService');
+const professorService = require('../services/professorService');
 
-class ProfessorController {
+class professorController {
   static async getProfessors(req, res) {
     try {
-      const professors = await ProfessorService.getAllProfessors();
+      const professors = await professorService.getAllProfessors();
       res.send(professors);
     } catch (error) {
       console.error('Erro ao listar professores:', error);
@@ -16,7 +16,7 @@ class ProfessorController {
     const { id } = req.params;
 
     try {
-      const professor = await ProfessorService.getProfessorById(id);
+      const professor = await professorService.getProfessorById(id);
 
       if (!professor) {
         return res.send('<h3>Professor não encontrado. <a href="/professors">Voltar</a></h3>');
@@ -33,7 +33,7 @@ class ProfessorController {
     const { name_pr } = req.body;
 
     try {
-      await ProfessorService.createProfessor(name_pr);
+      await professorService.createProfessor(name_pr);
       res.redirect('/professors');
     } catch (error) {
       console.error('Erro ao criar professor:', error);
@@ -46,7 +46,7 @@ class ProfessorController {
     const { name_pr } = req.body;
 
     try {
-      const updated = await ProfessorService.updateProfessor(id, name_pr);
+      const updated = await professorService.updateProfessor(id, name_pr);
 
       if (!updated) {
         return res.send('<h3>Professor não encontrado para atualização. <a href="/professors">Voltar</a></h3>');
@@ -63,7 +63,7 @@ class ProfessorController {
     const { id } = req.params;
 
     try {
-      const deleted = await ProfessorService.deleteProfessor(id);
+      const deleted = await professorService.deleteProfessor(id);
 
       if (!deleted) {
         return res.send('<h3>Professor não encontrado para exclusão. <a href="/professors">Voltar</a></h3>');
@@ -77,4 +77,4 @@ class ProfessorController {
   }
 }
 
-module.exports = ProfessorController;
+module.exports = professorController;

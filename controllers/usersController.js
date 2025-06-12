@@ -1,66 +1,64 @@
-const { db } = require( '../db/db' );
+const usersService = require('../services/usersService');
 
- async function getUsers(req, res) {
-  try {
-    const result = await db.query('SELECT * FROM users')
-    res.json(result.rows)
-  } catch (error) {
-    res.status(500).json({ error: error.message })
-  }
-};
-
- async function getUserById(req, res) {
-  const { id } = req.params
-  try {
-    const result = await db.query('SELECT * FROM users WHERE id_us = $1', [id])
-    if (result.rows.length === 0) {
-      return res.status(404).json({ error: 'Usuário não encontrado' })
+class usersController {
+  static async getUsers(req, res) {
+    try {
+      const users = await usersService.getAllUsers();
+      res.json(users);
+    } catch (error) {
+      res.status(500).json({ error: error.message });
     }
-    res.json(result.rows[0])
-  } catch (error) {
-    res.status(500).json({ error: error.message })
   }
-};
 
- async function createUser(req, res) {
-  const { name_us, mail_us, password_us } = req.body
-  try {
-    const result = await db.query(
-      'INSERT INTO users (name_us, mail_us, password_us) VALUES ($1, $2, $3) RETURNING *',
-      [name_us, mail_us, password_us]
-    )
-    res.status(201).json(result.rows[0])
-  } catch (error) {
-    res.status(500).json({ error: error.message })
-  }
-};
-
- async function updateUser(req, res) {
-  const { id } = req.params
-  const { name_us, mail_us, password_us } = req.body
-  try {
-    const result = await db.query(
-      'UPDATE users SET name_us = $1, mail_us = $2, password_us = $3 WHERE id_us = $4 RETURNING *',
-      [name_us, mail_us, password_us, id]
-    )
-    if (result.rows.length === 0) {
-      return res.status(404).json({ error: 'Usuário não encontrado' })
+  static async getUserById(req, res) {
+    const { id } = req.params;
+    try {
+      const user = await usersService.getUserById(id);
+      if (!user) {
+        return res.status(404).json({ error: 'Usuário não encontrado' });
+      }
+      res.json(user);
+    } catch (error) {
+      res.status(500).json({ error: error.message });
     }
-    res.json(result.rows[0])
-  } catch (error) {
-    res.status(500).json({ error: error.message })
   }
-};
 
- async function deleteUser(req, res) {
-  const { id } = req.params
-  try {
-    const result = await db.query('DELETE FROM users WHERE id_us = $1 RETURNING *', [id])
-    if (result.rows.length === 0) {
-      return res.status(404).json({ error: 'Usuário não encontrado' })
+  static async createUser(req, res) {
+    const { name_us, mail_us, password_us } = req.body;
+    try {
+      const user = await usersService.createUser(name_us, mail_us, password_us);
+      res.status(201).json(user);
+    } catch (error) {
+      res.status(500).json({ error: error.message });
     }
-    res.json({ message: 'Usuário deletado com sucesso' })
-  } catch (error) {
-    res.status(500).json({ error: error.message })
   }
-};
+
+  static async updateUser(req, res) {
+    const { id } = req.params;
+    const { name_us, mail_us, password_us } = req.body;
+    try {
+      const updatedUser = await usersService.updateUser(id, name_us, mail_us, password_us);
+      if (!updatedUser) {
+        return res.status(404).json({ error: 'Usuário não encontrado' });
+      }
+      res.json(updatedUser);
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  }
+
+  static async deleteUser(req, res) {
+    const { id } = req.params;
+    try {
+      const deleted = await usersService.deleteUser(id);
+      if (!deleted) {
+        return res.status(404).json({ error: 'Usuário não encontrado' });
+      }
+      res.json({ message: 'Usuário deletado com sucesso' });
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  }
+}
+
+module.exports = usersController;

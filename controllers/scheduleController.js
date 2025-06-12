@@ -1,12 +1,12 @@
 const path = require('path');
-const ScheduleService = require('../services/scheduleService');
+const scheduleService = require('../services/scheduleService');
 
-class ScheduleController {
+class scheduleController {
   static async listByTurma(req, res) {
     const { id } = req.params;
 
     try {
-      const schedules = await ScheduleService.getScheduleByTurma(id);
+      const schedules = await scheduleService.getScheduleByTurma(id);
 
       if (!schedules || schedules.length === 0) {
         return res.send('<h3>Horários da turma não encontrados. <a href="/homePage">Voltar</a></h3>');
@@ -37,7 +37,4 @@ class ScheduleController {
   }
 }
 
-module.exports = ScheduleController;
-
-
-module.exports = CourseController;
+module.exports = scheduleController;

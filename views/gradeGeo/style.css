@@ -56,29 +56,16 @@
     height: auto;
   }
 
-  .disciplina {
-    background: #e0e0e0;
+  .semestre {
+    cursor: pointer;
+    background-color: #e0e0e0;
     padding: 10px;
     margin: 5px 0;
     border-radius: 5px;
-    cursor: pointer;
   }
 
-.info {
-  display: none;
-  background: #f9f9f9;
-  padding: 15px;
-  margin-top: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.info-card {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 10px;
-}
-
-.info-card div {
-  text-align: center;
-}
+  .imagem {
+    display: none;
+    margin: 10px;
+    margin-left: 80px;
+  }

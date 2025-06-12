@@ -1,16 +1,25 @@
-const pool = require('../db/db');
-const bcrypt = require('bcrypt');
+const { db } = require('../db/db');
 
-async function getScheduleByTurma(turmaid) {
-    return await Schedule.find({ turma: turmaId })
-    .populate('materia')
-    .populate('professor');
+class scheduleService {
+  static async getScheduleByTurma(turmaId) {
+    const query = `
+      SELECT * FROM schedule
+      WHERE turma_id = $1
+      ORDER BY day, start_time
+    `;
+    const result = await db.query(query, [turmaId]);
+    return result.rows;
+  }
+
+  static async getScheduleByProfessor(professorId) {
+    const query = `
+      SELECT * FROM schedule
+      WHERE professor_id = $1
+      ORDER BY day, start_time
+    `;
+    const result = await db.query(query, [professorId]);
+    return result.rows;
+  }
 }
 
-async function getScheduleByProfessor(professorid) {
-    return await Schedule.find({ professor: professorId })
-    .populate('materia')
-    .populate('turma');
-}
-
-module.exports = { getScheduleByTurma, getScheduleByProfessor };
+module.exports = scheduleService;

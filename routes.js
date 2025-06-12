@@ -3,6 +3,11 @@ const router = express.Router();
 const path = require('path');
 const loginController = require('./controllers/loginController');
 const userController = require('./controllers/userController');
+const courseController = require('./controllers/courseController');
+const professorController = require('./controllers/professorController');
+const roomController = require('./controllers/roomController');
+const usersController = require('./controllers/usersController');
+const scheduleController = require('./controllers/scheduleController');
 
 router.get('/:page', (req, res) => {
   const page = req.params.page;

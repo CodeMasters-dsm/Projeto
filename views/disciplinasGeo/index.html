@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Disciplinas - Geoprocessamento</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<div class="main-content">
+    <div class="header">
+      <img src="/assets/logo-fatec.png" alt="Fatec Jacareí" class="logo-fatec" />
+    </div>
+<h2>Disciplinas</h2>
+
+
+  <ul id="listaSemestres">
+    <li class="semestre" onclick="mostrarDisciplinas(1)">1º Semestre</li>
+    <li class="semestre" onclick="mostrarDisciplinas(2)">2º Semestre</li>
+    <li class="semestre" onclick="mostrarDisciplinas(3)">3º Semestre</li>
+    <li class="semestre" onclick="mostrarDisciplinas(4)">4º Semestre</li>
+    <li class="semestre" onclick="mostrarDisciplinas(5)">5º Semestre</li>
+    <li class="semestre" onclick="mostrarDisciplinas(6)">6º Semestre</li>
+  </ul>
+
+
+  <ul id="disciplinas1" style="display: none;">
+    <li class="disciplina" onclick="toggleInfo('info1_1')">Introdução a Ciência da Geoinformação</li>
+    <li class="disciplina" onclick="toggleInfo('info1_2')">Desenho Técnico</li>
+    <li class="disciplina" onclick="toggleInfo('info1_3')">Algirítmos e Lógica de Programação </li>
+    <li class="disciplina" onclick="toggleInfo('info1_4')">Metodologia da Pesquisa Científico-Tecnológica </li>
+    <li class="disciplina" onclick="toggleInfo('info1_5')">Fundamentos de Física</li>
+    <li class="disciplina" onclick="toggleInfo('info1_6')">Cálculo</li>
+    <li class="disciplina" onclick="toggleInfo('info1_7')">Fundamentos da Comunicação Empresarial</li>
+    <li class="disciplina" onclick="toggleInfo('info1_8')">Inglês I</li>
+  </ul>
+
+  <ul id="disciplinas2" style="display: none;">
+    <li class="disciplina" onclick="toggleInfo('info2_1')">Sensoriamento Remoto e Fotointerpretação</li>
+    <li class="disciplina" onclick="toggleInfo('info2_2')">Linguagem de Programação I</li>
+    <li class="disciplina" onclick="toggleInfo('info2_3')">Banco de Dados Geográficos</li>
+    <li class="disciplina" onclick="toggleInfo('info2_4')">Cartografia</li>
+    <li class="disciplina" onclick="toggleInfo('info2_5')">Fundamentos de Óptica</li>
+    <li class="disciplina" onclick="toggleInfo('info2_6')">Algebra Linear e Geometria Analítica</li>
+    <li class="disciplina" onclick="toggleInfo('info2_7')">Inglês II</li>
+  </ul>
+
+  <ul id="disciplinas3" style="display: none;">
+    <li class="disciplina" onclick="toggleInfo('info3_1')">Linguagem de Programação II</li>
+    <li class="disciplina" onclick="toggleInfo('info3_2')">Modelagem de Banco de Dados Espacial</li>
+    <li class="disciplina" onclick="toggleInfo('info3_3')">Topografia e Batimetria</li>
+    <li class="disciplina" onclick="toggleInfo('info3_4')">Geodésia</li>
+    <li class="disciplina" onclick="toggleInfo('info3_5')">Processamento Digital de Imagens</li>
+    <li class="disciplina" onclick="toggleInfo('info3_6')">Estatística</li>
+    <li class="disciplina" onclick="toggleInfo('info3_7')">Inglês III</li>
+  </ul>
+
+  <ul id="disciplinas4" style="display: none;">
+    <li class="disciplina" onclick="toggleInfo('info4_1')">Projeto de Sistemas de Informação Geográfica</li>
+    <li class="disciplina" onclick="toggleInfo('info4_2')">Sensoriamento Remoto e Clima</li>
+    <li class="disciplina" onclick="toggleInfo('info4_3')">Geoprocessamento e Sistemas de Informação Geográfica</li>
+    <li class="disciplina" onclick="toggleInfo('info4_4')">Cartografia Aplicada</li>
+    <li class="disciplina" onclick="toggleInfo('info4_5')">Saúde e Segurança Ocupacional</li>
+    <li class="disciplina" onclick="toggleInfo('info4_6')">Fundamentos de Gestão Empresarial</li>
+    <li class="disciplina" onclick="toggleInfo('info4_7')">Geoestatística</li>
+    <li class="disciplina" onclick="toggleInfo('info4_8')">Inglês IV</li>
+  </ul>
+
+  <ul id="disciplinas5" style="display: none;">
+    <li class="disciplina" onclick="toggleInfo('info5_1')">Projetos em Geoprocessamentos I</p></li>
+    <li class="disciplina" onclick="toggleInfo('info5_2')">Análise Ambiental por Geoprocessamento</li>
+    <li class="disciplina" onclick="toggleInfo('info5_3')">Geoprocessamento Aplicado à Infraestrutura Urbana</li>
+    <li class="disciplina" onclick="toggleInfo('info5_4')">Tecnologias WEB Aplicada a Sistemas de Informação Geográfica</li>
+    <li class="disciplina" onclick="toggleInfo('info5_5')">Análise Especial de Modelagem de Terrenos</li>
+    <li class="disciplina" onclick="toggleInfo('info5_6')">Ajustamentos de Observações Geodésicas</li>
+    <li class="disciplina" onclick="toggleInfo('info5_7')">Legislação e Normas para Geoprocessamento</li>
+    <li class="disciplina" onclick="toggleInfo('info5_8')">Inglês V</li>
+  </ul>
+
+   <ul id="disciplinas6" style="display: none;">
+    <li class="disciplina" onclick="toggleInfo('info5_1')">Projetos em Geoprocessamentos II</li>
+    <li class="disciplina" onclick="toggleInfo('info5_2')">Geomarketing</li>
+    <li class="disciplina" onclick="toggleInfo('info5_3')">Fotogrametria Analógica e Digital</li>
+    <li class="disciplina" onclick="toggleInfo('info5_4')">Posicionamento por Satélite</li>
+    <li class="disciplina" onclick="toggleInfo('info5_5')">Cadastro Técnico Multifinalitário</li>
+    <li class="disciplina" onclick="toggleInfo('info5_6')">Integração e Análise de Dados Territoriais</li>
+    <li class="disciplina" onclick="toggleInfo('info5_7')">Padrões de Distribuição de Informações em SIG</li>
+    <li class="disciplina" onclick="toggleInfo('info5_8')">Georefenciamento de Imóveis Rurais</li>
+    <li class="disciplina" onclick="toggleInfo('info5_9')">Inglês VI</li>
+  </ul>
+
+  <div id="info1_1" class="info">
+    <h3>Algoritmos e Lógica de Programação</h3>
+    <div class="info-card">
+      <div>
+        <img src="/assets/professor-icon.png" alt="Professor" width="30"><br>
+        <strong>Professor</strong><br>Arley Souza
+      </div>
+      <div>
+        <img src="/assets/book.png" alt="Material" width="40"><br>
+        <strong>Material Complementar</strong>
+      </div>
+      <div>
+        <img src="/assets/calendar-icon.png" alt="Calendário" width="40"><br>
+        <strong>Calendário</strong>
+      </div>
+    </div>
+  </div>
+
+<div id="info1_2" class="info">
+  <h3>Sistemas Operacionais e Redes de Computadores</h3>
+  <div class="info-card">
+    <div>
+      <img src="/assets/professor-icon.png" alt="Professor" width="30"><br>
+      <strong>Professor</strong><br>Antonio Egydio
+    </div>
+    <div>
+      <img src="/assets/book.png" alt="Material" width="40"><br>
+      <strong>Material Complementar</strong>
+    </div>
+    <div>
+      <img src="/assets/calendar-icon.png" alt="Calendário" width="40"><br>
+      <strong>Calendário</strong>
+    </div>
+  </div>
+</div>
+
+<div id="info1_3" class="info">
+  <h3>Desenvolvimento Web I</h3>
+  <div class="info-card">
+    <div>
+      <img src="/assets/professor-icon.png" alt="Professor" width="30"><br>
+      <strong>Professor</strong><br>Henrique Louro
+    </div>
+    <div>
+      <img src="/assets/book.png" alt="Material" width="40"><br>
+      <strong>Material Complementar</strong>
+    </div>
+    <div>
+      <img src="/assets/calendar-icon.png" alt="Calendário" width="40"><br>
+      <strong>Calendário</strong>
+    </div>
+  </div>
+</div>
+
+<div id="info1_4" class="info">
+  <h3>Engenharia de Software</h3>
+  <div class="info-card">
+    <div>
+      <img src="/assets/professor-icon.png" alt="Professor" width="30"><br>
+      <strong>Professor</strong><br>Antonio Egydio
+    </div>
+    <div>
+      <img src="/assets/book.png" alt="Material" width="40"><br>
+      <strong>Material Complementar</strong>
+    </div>
+    <div>
+      <img src="/assets/calendar-icon.png" alt="Calendário" width="40"><br>
+      <strong>Calendário</strong>
+    </div>
+  </div>
+</div>
+
+<div id="info1_5" class="info">
+  <h3>Design Digital</h3>
+  <div class="info-card">
+    <div>
+      <img src="/assets/professor-icon.png" alt="Professor" width="30"><br>
+      <strong>Professor</strong><br>Marcelo Sudo
+    </div>
+    <div>
+      <img src="/assets/book.png" alt="Material" width="40"><br>
+      <strong>Material Complementar</strong>
+    </div>
+    <div>
+      <img src="/assets/calendar-icon.png" alt="Calendário" width="40"><br>
+      <strong>Calendário</strong>
+    </div>
+  </div>
+</div>
+
+<div id="info1_6" class="info">
+  <h3>Modelagem de Banco de Dados</h3>
+  <div class="info-card">
+    <div>
+      <img src="/assets/professor-icon.png" alt="Professor" width="30"><br>
+      <strong>Professor</strong><br>Marcelo Sudo
+    </div>
+    <div>
+      <img src="/assets/book.png" alt="Material" width="40"><br>
+      <strong>Material Complementar</strong>
+    </div>
+    <div>
+      <img src="/assets/calendar-icon.png" alt="Calendário" width="40"><br>
+      <strong>Calendário</strong>
+    </div>
+  </div>
+</div>
+
+  </html>

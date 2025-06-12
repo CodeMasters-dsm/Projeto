@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Disciplinas - Meio Ambiente e Recursos Hídricos</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<div class="main-content">
+    <div class="header">
+      <img src="/assets/logo-fatec.png" alt="Fatec Jacareí" class="logo-fatec" />
+    </div>
+<h2>Disciplinas</h2>
+
+
+  <ul id="listaSemestres">
+    <li class="semestre" onclick="mostrarDisciplinas(1)">1º Semestre</li>
+    <li class="semestre" onclick="mostrarDisciplinas(2)">2º Semestre</li>
+    <li class="semestre" onclick="mostrarDisciplinas(3)">3º Semestre</li>
+    <li class="semestre" onclick="mostrarDisciplinas(4)">4º Semestre</li>
+    <li class="semestre" onclick="mostrarDisciplinas(5)">5º Semestre</li>
+    <li class="semestre" onclick="mostrarDisciplinas(6)">6º Semestre</li>
+  </ul>
+
+
+  <ul id="disciplinas1" style="display: none;">
+    <li class="disciplina" onclick="toggleInfo('info1_1')">Ciências Ambientais e das Águas</li>
+    <li class="disciplina" onclick="toggleInfo('info1_2')">Biologia</li>
+    <li class="disciplina" onclick="toggleInfo('info1_3')">Sociologia Ambiental</li>
+    <li class="disciplina" onclick="toggleInfo('info1_4')">Matemática Aplicada</li>
+    <li class="disciplina" onclick="toggleInfo('info1_5')">Metodologia da Pesquisa Científico-Tecnológica</li>
+    <li class="disciplina" onclick="toggleInfo('info1_6')">Fundamentos da Comunicação Empresarial</li>
+    <li class="disciplina" onclick="toggleInfo('info1_7')">Química Geral</li>
+    <li class="disciplina" onclick="toggleInfo('info1_8')">Geociência Ambiental</li>
+    <li class="disciplina" onclick="toggleInfo('info1_9')">Inglês I</li>
+  </ul>
+
+  <ul id="disciplinas2" style="display: none;">
+    <li class="disciplina" onclick="toggleInfo('info2_1')">Hidrologia e Recursos Hídricos</li>
+    <li class="disciplina" onclick="toggleInfo('info2_2')">Ecologia</li>
+    <li class="disciplina" onclick="toggleInfo('info2_3')">Cartografia, Topografia e Batimetria</li>
+    <li class="disciplina" onclick="toggleInfo('info2_4')">Sensoriamento Remoto e Geoprocessamento</li>
+    <li class="disciplina" onclick="toggleInfo('info2_5')">Climatologia e Meteorologia</li>
+    <li class="disciplina" onclick="toggleInfo('info2_6')">Microbiologia Ambiental</li>
+    <li class="disciplina" onclick="toggleInfo('info2_6')">Físico Química Aplicada a Gestão Ambiental</li>
+    <li class="disciplina" onclick="toggleInfo('info2_6')">Inglês II</li>
+  </ul>
+
+  <ul id="disciplinas3" style="display: none;">
+    <li class="disciplina" onclick="toggleInfo('info3_1')">Hidráulica Fluvial</li>
+    <li class="disciplina" onclick="toggleInfo('info3_2')">Limnologia</li>
+    <li class="disciplina" onclick="toggleInfo('info3_3')">Estatística</li>
+    <li class="disciplina" onclick="toggleInfo('info3_4')">Planejamento e Conservação Ambiental</li>
+    <li class="disciplina" onclick="toggleInfo('info3_5')">Interpretação e Processamento Digital de Imagens</li>
+    <li class="disciplina" onclick="toggleInfo('info3_6')">Gestão da Qualidade</li>
+    <li class="disciplina" onclick="toggleInfo('info3_7')">Saneamento Ambiental I</li>
+    <li class="disciplina" onclick="toggleInfo('info3_8')">Inglês III</li>
+  </ul>
+
+  <ul id="disciplinas4" style="display: none;">
+    <li class="disciplina" onclick="toggleInfo('info4_1')">Economia do Meio Ambiente</li>
+    <li class="disciplina" onclick="toggleInfo('info4_2')">Uso e Conservação dos Solos</li>
+    <li class="disciplina" onclick="toggleInfo('info4_3')">Restauração Ecológica</li>
+    <li class="disciplina" onclick="toggleInfo('info4_4')">Geoprocessamento Aplicado a Análises Ambientais</li>
+    <li class="disciplina" onclick="toggleInfo('info4_5')">Saneamento Ambiental II</li>
+    <li class="disciplina" onclick="toggleInfo('info4_6')">Saúde e Segurança Ocupacional</li>
+    <li class="disciplina" onclick="toggleInfo('info4_7')">Educação Ambiental</li>
+    <li class="disciplina" onclick="toggleInfo('info4_8')">Inglês IV</li>
+  </ul>
+
+  <ul id="disciplinas5" style="display: none;">
+    <li class="disciplina" onclick="toggleInfo('info5_1')">Planejamento e Drenagem Urbana</li>
+    <li class="disciplina" onclick="toggleInfo('info5_2')">Gerenciamento de Resíduos</li>
+    <li class="disciplina" onclick="toggleInfo('info5_3')">Avaliação de Impactos Ambientais e Análise de Risco</li>
+    <li class="disciplina" onclick="toggleInfo('info5_4')">Projetos Ambientais I</li>
+    <li class="disciplina" onclick="toggleInfo('info5_5')">Legislação Ambiental</li>
+    <li class="disciplina" onclick="toggleInfo('info5_6')">Sistemas de Gestão e Auditorias Ambientais</li>
+    <li class="disciplina" onclick="toggleInfo('info5_7')">Águas Subterrâneas</li>
+  </ul>
+
+  <ul id="disciplinas6" style="display: none;">
+    <li class="disciplina" onclick="toggleInfo('info5_1')">Energias Alternativas</li>
+    <li class="disciplina" onclick="toggleInfo('info5_2')">Projetos Ambientais II</li>
+    <li class="disciplina" onclick="toggleInfo('info5_3')">Revitalização de Rios e Recuperação de Áreas Degradadas</li>
+    <li class="disciplina" onclick="toggleInfo('info5_4')">Turismo, Meio Ambiente e Recursos Hídricos</li>
+    <li class="disciplina" onclick="toggleInfo('info5_5')">Planejamento Integrado de Bacias Hidrográficas</li>
+    <li class="disciplina" onclick="toggleInfo('info5_6')">Ecotecnologia</li>
+    <li class="disciplina" onclick="toggleInfo('info5_7')">Controle e Monitoramento da Poluição Atmosférica e Sonora</li>
+  </ul>
+
+  <div id="info1_1" class="info">
+    <h3>Algoritmos e Lógica de Programação</h3>
+    <div class="info-card">
+      <div>
+        <img src="/assets/professor-icon.png" alt="Professor" width="30"><br>
+        <strong>Professor</strong><br>Arley Souza
+      </div>
+      <div>
+        <img src="/assets/book.png" alt="Material" width="40"><br>
+        <strong>Material Complementar</strong>
+      </div>
+      <div>
+        <img src="/assets/calendar-icon.png" alt="Calendário" width="40"><br>
+        <strong>Calendário</strong>
+      </div>
+    </div>
+  </div>
+
+<div id="info1_2" class="info">
+  <h3>Sistemas Operacionais e Redes de Computadores</h3>
+  <div class="info-card">
+    <div>
+      <img src="/assets/professor-icon.png" alt="Professor" width="30"><br>
+      <strong>Professor</strong><br>Antonio Egydio
+    </div>
+    <div>
+      <img src="/assets/book.png" alt="Material" width="40"><br>
+      <strong>Material Complementar</strong>
+    </div>
+    <div>
+      <img src="/assets/calendar-icon.png" alt="Calendário" width="40"><br>
+      <strong>Calendário</strong>
+    </div>
+  </div>
+</div>
+
+<div id="info1_3" class="info">
+  <h3>Desenvolvimento Web I</h3>
+  <div class="info-card">
+    <div>
+      <img src="/assets/professor-icon.png" alt="Professor" width="30"><br>
+      <strong>Professor</strong><br>Henrique Louro
+    </div>
+    <div>
+      <img src="/assets/book.png" alt="Material" width="40"><br>
+      <strong>Material Complementar</strong>
+    </div>
+    <div>
+      <img src="/assets/calendar-icon.png" alt="Calendário" width="40"><br>
+      <strong>Calendário</strong>
+    </div>
+  </div>
+</div>
+
+<div id="info1_4" class="info">
+  <h3>Engenharia de Software</h3>
+  <div class="info-card">
+    <div>
+      <img src="/assets/professor-icon.png" alt="Professor" width="30"><br>
+      <strong>Professor</strong><br>Antonio Egydio
+    </div>
+    <div>
+      <img src="/assets/book.png" alt="Material" width="40"><br>
+      <strong>Material Complementar</strong>
+    </div>
+    <div>
+      <img src="/assets/calendar-icon.png" alt="Calendário" width="40"><br>
+      <strong>Calendário</strong>
+    </div>
+  </div>
+</div>
+
+<div id="info1_5" class="info">
+  <h3>Design Digital</h3>
+  <div class="info-card">
+    <div>
+      <img src="/assets/professor-icon.png" alt="Professor" width="30"><br>
+      <strong>Professor</strong><br>Marcelo Sudo
+    </div>
+    <div>
+      <img src="/assets/book.png" alt="Material" width="40"><br>
+      <strong>Material Complementar</strong>
+    </div>
+    <div>
+      <img src="/assets/calendar-icon.png" alt="Calendário" width="40"><br>
+      <strong>Calendário</strong>
+    </div>
+  </div>
+</div>
+
+<div id="info1_6" class="info">
+  <h3>Modelagem de Banco de Dados</h3>
+  <div class="info-card">
+    <div>
+      <img src="/assets/professor-icon.png" alt="Professor" width="30"><br>
+      <strong>Professor</strong><br>Marcelo Sudo
+    </div>
+    <div>
+      <img src="/assets/book.png" alt="Material" width="40"><br>
+      <strong>Material Complementar</strong>
+    </div>
+    <div>
+      <img src="/assets/calendar-icon.png" alt="Calendário" width="40"><br>
+      <strong>Calendário</strong>
+    </div>
+  </div>
+</div>
+
+  </html>

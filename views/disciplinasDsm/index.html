@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Disciplinas - Desenvolvimento de Software Multiplatforma</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<div class="main-content">
+    <div class="header">
+      <img src="/assets/logo-fatec.png" alt="Fatec Jacareí" class="logo-fatec" />
+    </div>
+<h2>Disciplinas</h2>
+
+
+  <ul id="listaSemestres">
+    <li class="semestre" onclick="mostrarDisciplinas(1)">1º Semestre</li>
+    <li class="semestre" onclick="mostrarDisciplinas(2)">2º Semestre</li>
+    <li class="semestre" onclick="mostrarDisciplinas(3)">3º Semestre</li>
+    <li class="semestre" onclick="mostrarDisciplinas(4)">4º Semestre</li>
+    <li class="semestre" onclick="mostrarDisciplinas(5)">5º Semestre</li>
+    <li class="semestre" onclick="mostrarDisciplinas(6)">6º Semestre</li>
+  </ul>
+
+
+  <ul id="disciplinas1" style="display: none;">
+    <li class="disciplina" onclick="toggleInfo('info1_1')">Algoritmos e Lógica de Programação</li>
+    <li class="disciplina" onclick="toggleInfo('info1_2')">Sistemas Operacionais e Redes de Computadores</li>
+    <li class="disciplina" onclick="toggleInfo('info1_3')">Desenvolvimento Web I</li>
+    <li class="disciplina" onclick="toggleInfo('info1_4')">Engenharia de Software</li>
+    <li class="disciplina" onclick="toggleInfo('info1_5')">Design Digital</li>
+    <li class="disciplina" onclick="toggleInfo('info1_6')">Modelagem de Banco de Dados</li>
+  </ul>
+
+  <ul id="disciplinas2" style="display: none;">
+    <li class="disciplina" onclick="toggleInfo('info2_1')">Técnicas de Programação I</li>
+    <li class="disciplina" onclick="toggleInfo('info2_2')">Engenharia de Software II </li>
+    <li class="disciplina" onclick="toggleInfo('info2_3')">Desenvolvimento Web II</li>
+    <li class="disciplina" onclick="toggleInfo('info2_4')">BD Relacional</li>
+    <li class="disciplina" onclick="toggleInfo('info2_5')">Matemática para Computação</li>
+    <li class="disciplina" onclick="toggleInfo('info2_6')">Estrutura de Dados</li>
+  </ul>
+
+  <ul id="disciplinas3" style="display: none;">
+    <li class="disciplina" onclick="toggleInfo('info3_1')">BD Não Relacional</li>
+    <li class="disciplina" onclick="toggleInfo('info3_2')">Técnicas de Programação II</li>
+    <li class="disciplina" onclick="toggleInfo('info3_3')">Gestão Àgil de Proj. de Software</li>
+    <li class="disciplina" onclick="toggleInfo('info3_4')">Interação Humano Computador</li>
+    <li class="disciplina" onclick="toggleInfo('info3_5')">Álgebra Linear</li>
+    <li class="disciplina" onclick="toggleInfo('info3_6')">Inglês I</li>
+    <li class="disciplina" onclick="toggleInfo('info3_7')">Desenvolvimento Web III</li>
+  </ul>
+
+  <ul id="disciplinas4" style="display: none;">
+    <li class="disciplina" onclick="toggleInfo('info4_1')">Prog. para Dispositivos Móveis I</li>
+    <li class="disciplina" onclick="toggleInfo('info4_2')">Integração e Entrega Contínua</li>
+    <li class="disciplina" onclick="toggleInfo('info4_3')">Laboratório de Desenvolvimento Web </li>
+    <li class="disciplina" onclick="toggleInfo('info4_4')">Internet das Coisas e Aplicações</li>
+    <li class="disciplina" onclick="toggleInfo('info4_5')">Estatística Aplicada</li>
+    <li class="disciplina" onclick="toggleInfo('info4_6')">Experiência do Usuário</li>
+    <li class="disciplina" onclick="toggleInfo('info4_7')">Inglês II</li>
+  </ul>
+
+  <ul id="disciplinas5" style="display: none;">
+    <li class="disciplina" onclick="toggleInfo('info5_1')">Computação em Nuvem I</li>
+    <li class="disciplina" onclick="toggleInfo('info5_2')">Aprendizagem de Máquina</li>
+    <li class="disciplina" onclick="toggleInfo('info5_3')">Lab. de Des. para Dispositivos Móveis</li>
+    <li class="disciplina" onclick="toggleInfo('info5_4')">Programação para Dispositivos Móveis II</li>
+    <li class="disciplina" onclick="toggleInfo('info5_5')">Segurança no Des. de Aplicações</li>
+    <li class="disciplina" onclick="toggleInfo('info5_6')">Fundamentos da Redação técnica</li>
+    <li class="disciplina" onclick="toggleInfo('info5_7')">Inglês III</li>
+  </ul>
+
+  <ul id="disciplinas6" style="display: none;">
+    <li class="disciplina" onclick="toggleInfo('info5_1')">Computação em Nuvem II</li>
+    <li class="disciplina" onclick="toggleInfo('info5_2')">Processamento de Linguagem Natural</li>
+    <li class="disciplina" onclick="toggleInfo('info5_3')">Laboratório de Des. Multiplataforma</li>
+    <li class="disciplina" onclick="toggleInfo('info5_4')">Mineração de Dados</li>
+    <li class="disciplina" onclick="toggleInfo('info5_5')">Qualidade e Testes de Software</li>
+    <li class="disciplina" onclick="toggleInfo('info5_6')">Ética Profissional e Patente</li>
+    <li class="disciplina" onclick="toggleInfo('info5_7')">Inglês IV</li>
+  </ul>
+
+  <div id="info1_1" class="info">
+    <h3>Algoritmos e Lógica de Programação</h3>
+    <div class="info-card">
+      <div>
+        <img src="/assets/professor-icon.png" alt="Professor" width="30"><br>
+        <strong>Professor</strong><br>Arley Souza
+      </div>
+      <div>
+        <img src="/assets/book.png" alt="Material" width="40"><br>
+        <strong>Material Complementar</strong>
+      </div>
+      <div>
+        <img src="/assets/calendar-icon.png" alt="Calendário" width="40"><br>
+        <strong>Calendário</strong>
+      </div>
+    </div>
+  </div>
+
+<div id="info1_2" class="info">
+  <h3>Sistemas Operacionais e Redes de Computadores</h3>
+  <div class="info-card">
+    <div>
+      <img src="/assets/professor-icon.png" alt="Professor" width="30"><br>
+      <strong>Professor</strong><br>Antonio Egydio
+    </div>
+    <div>
+      <img src="/assets/book.png" alt="Material" width="40"><br>
+      <strong>Material Complementar</strong>
+    </div>
+    <div>
+      <img src="/assets/calendar-icon.png" alt="Calendário" width="40"><br>
+      <strong>Calendário</strong>
+    </div>
+  </div>
+</div>
+
+<div id="info1_3" class="info">
+  <h3>Desenvolvimento Web I</h3>
+  <div class="info-card">
+    <div>
+      <img src="/assets/professor-icon.png" alt="Professor" width="30"><br>
+      <strong>Professor</strong><br>Henrique Louro
+    </div>
+    <div>
+      <img src="/assets/book.png" alt="Material" width="40"><br>
+      <strong>Material Complementar</strong>
+    </div>
+    <div>
+      <img src="/assets/calendar-icon.png" alt="Calendário" width="40"><br>
+      <strong>Calendário</strong>
+    </div>
+  </div>
+</div>
+
+<div id="info1_4" class="info">
+  <h3>Engenharia de Software</h3>
+  <div class="info-card">
+    <div>
+      <img src="/assets/professor-icon.png" alt="Professor" width="30"><br>
+      <strong>Professor</strong><br>Antonio Egydio
+    </div>
+    <div>
+      <img src="/assets/book.png" alt="Material" width="40"><br>
+      <strong>Material Complementar</strong>
+    </div>
+    <div>
+      <img src="/assets/calendar-icon.png" alt="Calendário" width="40"><br>
+      <strong>Calendário</strong>
+    </div>
+  </div>
+</div>
+
+<div id="info1_5" class="info">
+  <h3>Design Digital</h3>
+  <div class="info-card">
+    <div>
+      <img src="/assets/professor-icon.png" alt="Professor" width="30"><br>
+      <strong>Professor</strong><br>Marcelo Sudo
+    </div>
+    <div>
+      <img src="/assets/book.png" alt="Material" width="40"><br>
+      <strong>Material Complementar</strong>
+    </div>
+    <div>
+      <img src="/assets/calendar-icon.png" alt="Calendário" width="40"><br>
+      <strong>Calendário</strong>
+    </div>
+  </div>
+</div>
+
+<div id="info1_6" class="info">
+  <h3>Modelagem de Banco de Dados</h3>
+  <div class="info-card">
+    <div>
+      <img src="/assets/professor-icon.png" alt="Professor" width="30"><br>
+      <strong>Professor</strong><br>Marcelo Sudo
+    </div>
+    <div>
+      <img src="/assets/book.png" alt="Material" width="40"><br>
+      <strong>Material Complementar</strong>
+    </div>
+    <div>
+      <img src="/assets/calendar-icon.png" alt="Calendário" width="40"><br>
+      <strong>Calendário</strong>
+    </div>
+  </div>
+</div>
+
+  </html>

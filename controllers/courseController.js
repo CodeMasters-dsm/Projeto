@@ -1,7 +1,7 @@
 const path = require('path');
-const CourseService = require('../services/courseService');
+const courseService = require('../services/courseService');
 
-class CourseController {
+class courseController {
   static async getCourses(req, res) {
     try {
       const courses = await CourseService.getAllCourses();
@@ -16,7 +16,7 @@ class CourseController {
     const { id } = req.params;
 
     try {
-      const course = await CourseService.getCourseById(id);
+      const course = await courseService.getCourseById(id);
 
       if (!course) {
         return res.send('<h3>Curso não encontrado. <a href="/courses">Voltar</a></h3>');
@@ -33,7 +33,7 @@ class CourseController {
     const { pr_id, name_co, semester_co } = req.body;
 
     try {
-      const course = await CourseService.createCourse(pr_id, name_co, semester_co);
+      const course = await courseService.createCourse(pr_id, name_co, semester_co);
       res.redirect('/courses');
     } catch (error) {
       console.error('Erro ao criar curso:', error);
@@ -76,3 +76,5 @@ class CourseController {
     }
   }
 }
+
+module.exports = courseController;
