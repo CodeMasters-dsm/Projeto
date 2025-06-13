@@ -221,7 +221,7 @@ Foi decidido construir os principais elementos do protótipo das páginas atrav�
 | RNF01/RNF02  | 5 | Criação das demais páginas da aquisição (HTML e CSS) | Gabrielly e Eric | ✔  | ✔  |
 | RF01  | 2 | Complementação dos dados no Banco de Dados | Pedro  | ✔  | ✔  |
 | RP02  | 5 | Elaboração da estrutura do backend (JavaScript e Node.js) | Manuela  |  ✔  | ✔  |
-|  RF02      | 8 | Implementação dos recursos de CRUD |  Pedro   | ✔  | ✔  |
+|  RF02      | 8 | Implementação dos recursos de CRUD |  Pedro   | ✔  | ❌  |
 |  RF01      | 2 | Fazer a ingestão de dados no sistema a partir de um arquivo CSV |  Gabrielly   | ✔  | ✔  |
 |  RF03      | 3 | Estabelecimento da conexão entre o Banco de Dados e o Backend |  Marcelo |  ✔  |✔  |
 | RF02/RF03  | 3 | Testagem das rotas de aplicação | Gabrielly e Marcelo  | ✔  | ✔  |
