@@ -35,6 +35,18 @@ class scheduleController {
       res.status(500).send('Erro interno do servidor');
     }
   }
+
+  static async getAulas(req, res) {
+    const { curso, turno, semestre } = req.query;
+
+    try {
+      const aulas = await scheduleService.buscarAulas(curso, turno, semestre);
+      res.json(aulas);
+    } catch (err) {
+      console.error('Erro ao buscar aulas:', err);
+      res.status(500).json({ erro: 'Erro ao buscar aulas' });
+    }
+  }
 }
 
 module.exports = scheduleController;

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <title>Sistema de Horários</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
 </head>
+
 <body>
 
   <header>
@@ -15,31 +16,31 @@
 
   <div class="filtros">
     <div class="dropdown">
-      <button class="filtro">Curso ▾</button>
+      <button class="filtro" data-tipo="curso" data-valor="">Curso ▾</button>
       <div class="dropdown-menu">
-        <div class="opcao" data-tipo="curso">Meio Ambiente e Recursos Hídricos</div>
-        <div class="opcao" data-tipo="curso">Geoprocessamento</div>
-        <div class="opcao" data-tipo="curso">Desenvolvimento de Software Multiplataforma</div>
+        <div class="opcao">Meio Ambiente e Recursos Hídricos</div>
+        <div class="opcao">Geoprocessamento</div>
+        <div class="opcao">Desenvolvimento de Software Multiplataforma</div>
       </div>
     </div>
 
     <div class="dropdown">
-      <button class="filtro">Turno ▾</button>
+      <button class="filtro" data-tipo="turno" data-valor="">Turno ▾</button>
       <div class="dropdown-menu">
-        <div class="opcao" data-tipo="turno">Diurno</div>
-        <div class="opcao" data-tipo="turno">Noturno</div>
+        <div class="opcao">Diurno</div>
+        <div class="opcao">Noturno</div>
       </div>
     </div>
 
     <div class="dropdown">
-      <button class="filtro">Semestre ▾</button>
+      <button class="filtro" data-tipo="semestre" data-valor="">Semestre ▾</button>
       <div class="dropdown-menu">
-        <div class="opcao" data-tipo="semestre">1º Semestre</div>
-        <div class="opcao" data-tipo="semestre">2º Semestre</div>
-        <div class="opcao" data-tipo="semestre">3º Semestre</div>
-        <div class="opcao" data-tipo="semestre">4º Semestre</div>
-        <div class="opcao" data-tipo="semestre">5º Semestre</div>
-        <div class="opcao" data-tipo="semestre">6º Semestre</div>
+        <div class="opcao">1</div>
+        <div class="opcao">2</div>
+        <div class="opcao">3</div>
+        <div class="opcao">4</div>
+        <div class="opcao">5</div>
+        <div class="opcao">6</div>
       </div>
     </div>
 
@@ -50,18 +51,34 @@
     <div class="itinerario-grande">
       <h3>ITINERÁRIO</h3>
       <div class="semana">
-        <div class="dia"><strong>SEGUNDA</strong><p>Exemplo de disciplina – 18:45 - 22:15</p></div>
-        <div class="dia"><strong>TERÇA</strong><p>Exemplo de disciplina – 18:45 - 22:15</p></div>
-        <div class="dia"><strong>QUARTA</strong><p>Exemplo de disciplina – 18:45 - 22:15</p></div>
-        <div class="dia"><strong>QUINTA</strong><p>Exemplo de disciplina – 18:45 - 22:15</p></div>
-        <div class="dia"><strong>SEXTA</strong><p>Exemplo de disciplina – 18:45 - 22:15</p></div>
+        <div class="dia"><strong>SEGUNDA</strong>
+          <p></p>
+        </div>
+        <div class="dia"><strong>TERÇA</strong>
+          <p></p>
+        </div>
+        <div class="dia"><strong>QUARTA</strong>
+          <p></p>
+        </div>
+        <div class="dia"><strong>QUINTA</strong>
+          <p></p>
+        </div>
+        <div class="dia"><strong>SEXTA</strong>
+          <p></p>
+        </div>
       </div>
-  
+
       <div class="acoes">
         <button>EXPORTAR RELATÓRIOS</button>
-        <button>MAPA DE AMBIENTE</button>
+        <a href="../mapaAmbiente/index.html" target="_blank">
+          <button>MAPA DE AMBIENTE</button>
+        </a>
+
       </div>
     </div>
   </main>
+
+  <script src="script.js"></script>
 </body>
+
 </html>

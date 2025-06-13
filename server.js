@@ -4,6 +4,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const session = require('express-session');
 const path = require('path');
+const pool = require('./db/db');
 const port = 3000;
 
 app.use(express.json());

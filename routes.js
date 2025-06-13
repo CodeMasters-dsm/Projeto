@@ -9,23 +9,6 @@ const roomController = require('./controllers/roomController');
 const usersController = require('./controllers/usersController');
 const scheduleController = require('./controllers/scheduleController');
 
-router.get('/:page', (req, res) => {
-  const page = req.params.page;
-
-  const filePath = path.join(__dirname, 'views', page, 'index.html');
-
-  res.sendFile(filePath, err => {
-    if (err) {
-      res.status(404).send('Página não encontrada');
-    }
-  });
-});
-
-router.get('/', (req, res) => {
-  res.redirect('/homePage');
-});
-
-
 router.post('/login', loginController.postLogin);
 router.get('/logout', loginController.logout);
 
@@ -47,11 +30,8 @@ router.put('/professors/:id', professorController.updateProfessor);
 router.delete('/professors/:id', professorController.deleteProfessor);
 
 // //Room
-router.get('/rooms', roomController.getRooms);
-router.get('/rooms/:id', roomController.getRoomById);
-router.post('/rooms', roomController.createRoom);
-router.put('/rooms/:id', roomController.updateRoom);
-router.delete('/rooms/:id', roomController.deleteRoom);
+router.get('/room/:level', roomController.getRoomsByLevel); // ex: /api/room/0
+router.get('/room-schedule/:id', roomController.getRoomItinerary); // ex: /api/room-schedule/1
 
 // //Users
 router.get('/users', usersController.getUsers);
@@ -63,5 +43,22 @@ router.delete('/users/:id', usersController.deleteUser);
 // //Schedule
 router.get('/schedule/turma/:id', scheduleController.listByTurma);
 router.get('/schedule/professor/:id', scheduleController.listByProfessor);
+router.get('/aulas', scheduleController.getAulas);
+
+router.get('/:page', (req, res) => {
+  const page = req.params.page;
+
+  const filePath = path.join(__dirname, 'views', page, 'index.html');
+
+  res.sendFile(filePath, err => {
+    if (err) {
+      res.status(404).send('Página não encontrada');
+    }
+  });
+});
+
+router.get('/', (req, res) => {
+  res.redirect('/homePage');
+});
 
 module.exports = router;

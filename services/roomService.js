@@ -1,35 +1,39 @@
-const { db } = require('../db/db');
+const pool = require('../db/db');
 
 class roomService {
-  static async getAllRooms() {
-    const result = await db.query('SELECT * FROM room');
+  static async getRoomsByLevel(level) {
+    const result = await pool.query(
+      "SELECT id_ro, number_ro, description_ro FROM room WHERE level_ro = $1 ORDER BY number_ro",
+      [level]
+    );
     return result.rows;
   }
 
-  static async getRoomById(id) {
-    const result = await db.query('SELECT * FROM room WHERE id_ro = $1', [id]);
-    return result.rows[0];
-  }
+  static async getRoomItinerary(roomId) {
+    const result = await pool.query(`
+    SELECT 
+  c.name_co AS disciplina,
+  p.name_pr AS professor,
+  rhc.day_of_week_rc AS dia,
+  TO_CHAR(rhc.begin_rc, 'HH24:MI') AS inicio,
+  TO_CHAR(rhc.end_rc, 'HH24:MI') AS fim
+FROM room_has_course rhc
+JOIN course c ON rhc.co_id = c.id_co
+JOIN professor p ON c.pr_id = p.id_pr   -- professor vem do curso
+WHERE rhc.ro_id = $1
+ORDER BY 
+  CASE rhc.day_of_week_rc
+    WHEN 'segunda-feira' THEN 1
+    WHEN 'terça-feira' THEN 2
+    WHEN 'quarta-feira' THEN 3
+    WHEN 'quinta-feira' THEN 4
+    WHEN 'sexta-feira' THEN 5
+    ELSE 6
+  END,
+  rhc.begin_rc;
+  `, [roomId]);
 
-  static async createRoom(number_ro, level_ro, type_ro, description_ro) {
-    const result = await db.query(
-      'INSERT INTO room (number_ro, level_ro, type_ro, description_ro) VALUES ($1, $2, $3, $4) RETURNING *',
-      [number_ro, level_ro, type_ro, description_ro]
-    );
-    return result.rows[0];
-  }
-
-  static async updateRoom(id, number_ro, level_ro, type_ro, description_ro) {
-    const result = await db.query(
-      'UPDATE room SET number_ro = $1, level_ro = $2, type_ro = $3, description_ro = $4 WHERE id_ro = $5 RETURNING *',
-      [number_ro, level_ro, type_ro, description_ro, id]
-    );
-    return result.rows[0];
-  }
-
-  static async deleteRoom(id) {
-    const result = await db.query('DELETE FROM room WHERE id_ro = $1 RETURNING *', [id]);
-    return result.rows[0];
+    return result.rows;
   }
 }
 
