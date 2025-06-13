@@ -22,7 +22,7 @@ Para estimular o aprendizado prático e a aplicação de conceitos teóricos, a 
 |--------|-------------|-------------|-------------|--------|
 | 01     | [Sprint 01](#sprint-1) | 24/03/2025  | 15/04/2025  |  ✔    |
 | 02     | [Sprint 02](#sprint-2) | 16/04/2025  | 15/05/2025  |  ✔    |
-| 03     | [Sprint 03](#sprint-3) | 16/05/2025  | 11/06/2025  |  ⏳    |
+| 03     | [Sprint 03](#sprint-3) | 16/05/2025  | 11/06/2025  |   ✔   |
 
 <br>
 
@@ -202,12 +202,13 @@ Foi decidido construir os principais elementos do protótipo das páginas atrav�
 <br>
 
 
-
+<span id="sprint-3">
+  
+<br>
 
 
 # :page_with_curl: SPRINT 3
-<p>Na Terceira Sprint, observamos um avanço significativo no projeto. A principal melhoria foi a elaboração de um backlog mais detalhado e descritivo, o que proporcionou maior clareza para a equipe de desenvolvimento. Com tarefas mais bem definidas e objetivos claros, a sprint se tornou muito mais produtiva, permitindo que os desenvolvedores focassem em suas entregas com menos bloqueios e maior autonomia.
-</p>
+<p>A Sprint 3 marca a fase final do nosso projeto de Sistema de Horário. Por ser a última sprint, reforçamos em reunião com a equipe CodeMasters a importância de conduzi-la com foco e comprometimento. Nesta sprint, as tarefas prioritárias são aquelas fundamentais para a conclusão do sistema para que possa ser entregue com excelência e de forma estruturada.</p>
 
 <br>
 
@@ -216,24 +217,39 @@ Foi decidido construir os principais elementos do protótipo das páginas atrav�
 
 | ID REFERENCIA | Prioridade   | REQUISITO DA SPRINT | Responsável | TAREFA INICIADA | TAREFA CONCLUIDA | 
 |---------------|------------|----------------------|--------------------|-------------|----------------|
-| RNF01/RNF02 | 5 | Criação da página "Sistema de Horários"  | Eric | ✔  | ⏳  |
+| RNF01/RNF02 | 5 | Criação da página "Sistema de Horários"  | Eric | ✔  |  ✔ |
 | RNF01/RNF02  | 5 | Criação das demais páginas da aquisição (HTML e CSS) | Gabrielly e Eric | ✔  | ✔  |
 | RF01  | 2 | Complementação dos dados no Banco de Dados | Pedro  | ✔  | ✔  |
-| RP02  | 5 | Elaboração da estrutura do backend (JavaScript e Node.js) | Manuela  |  ✔  | ⏳  |
+| RP02  | 5 | Elaboração da estrutura do backend (JavaScript e Node.js) | Manuela  |  ✔  | ✔  |
 |  RF02      | 8 | Implementação dos recursos de CRUD |  Pedro   | ✔  | ✔  |
 |  RF01      | 2 | Fazer a ingestão de dados no sistema a partir de um arquivo CSV |  Gabrielly   | ✔  | ✔  |
-|  RF03      | 3 | Estabelecimento da conexão entre o Banco de Dados e o Backend |  Marcelo |  ⏳  | ⏳  |
-| RF02/RF03  | 3 | Testagem das rotas de aplicação | Gabrielly e Marcelo  | ⏳  | ⏳  |
-|  -     | 2 | Revisão geral, testes finais e ajustes | Gabrielly e Manuela |  ⏳  | ⏳  |
-|  -      | 2 | Documentação no GitHub | Gabrielly e Manuela  | ✔  | ⏳  |
+|  RF03      | 3 | Estabelecimento da conexão entre o Banco de Dados e o Backend |  Marcelo |  ✔  |✔  |
+| RF02/RF03  | 3 | Testagem das rotas de aplicação | Gabrielly e Marcelo  | ✔  | ✔  |
+|  -     | 2 | Revisão geral, testes finais e ajustes | Gabrielly e Manuela |✔    |✔  |
+|  -      | 2 | Documentação no GitHub | Gabrielly e Manuela  | ✔  |  ✔ |
 
 <br>
 
 
 <br>
 
+### • Burndown Sprint 3
+<br>
+
+<br>
+
+### • Sprint Retrospective 
+
+<br>
+
+**1. O que funcionou bem durante o sprint?**
+<p>Na Terceira Sprint, observamos um avanço significativo no projeto. A principal melhoria foi a elaboração de um backlog mais detalhado e descritivo, o que proporcionou maior clareza para a equipe de desenvolvimento. Com tarefas mais bem definidas e objetivos claros, a sprint se tornou muito mais produtiva, permitindo que os desenvolvedores focassem em suas entregas com menos bloqueios e maior autonomia.</p>
+<br>
 
 
+**2. O que não funcionou tão bem durante o sprint?**
+<p>Durante a última sprint, a equipe enfrentou dificuldades técnicas significativas ao desenvolver a parte mais crítica do projeto, o que impactou diretamente no progresso planejado. Essas dificuldades, aliadas à limitação de tempo disponível, exigiram a reavaliação de prioridades. Como consequência, alguns itens considerados opcionais foram deixados de lado, a fim de concentrar esforços na entrega do núcleo funcional do produto.</p>
+<br>
 
 
 
