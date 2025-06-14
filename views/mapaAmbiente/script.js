@@ -1,6 +1,6 @@
 async function carregarAmbientes(level) {
   try {
-    const response = await fetch(`http://localhost:3000/room/${level}`);
+    const response = await fetch(`https://codemasters-projeto-abp.onrender.com/room/${level}`);
     if (!response.ok) throw new Error('Erro ao carregar salas');
     const salas = await response.json();
 
@@ -33,7 +33,7 @@ async function carregarItinerario(idSala, nomeSala) {
     const botaoClicado = Array.from(document.querySelectorAll('.sala')).find(btn => btn.dataset.id == idSala);
     if (botaoClicado) botaoClicado.classList.add('selecionada');
 
-    const response = await fetch(`http://localhost:3000/room-schedule/${idSala}`);
+    const response = await fetch(`https://codemasters-projeto-abp.onrender.com/room-schedule/${idSala}`);
     if (!response.ok) throw new Error('Erro ao carregar itinerário');
     const dados = await response.json();
 
