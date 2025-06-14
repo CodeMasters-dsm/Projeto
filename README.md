@@ -121,7 +121,7 @@ Foi decidido construir os principais elementos do protótipo das páginas atrav�
 ### • Burndown Sprint 1
 <br>
 
-![image](https://github.com/user-attachments/assets/88a8b7e4-4923-45f7-8c7d-af0b240956d5)
+![Captura de Tela (1)](https://github.com/user-attachments/assets/467f31a5-2e30-4edc-a85f-6b94e97d3c69)
 
 <br>
 
@@ -177,7 +177,7 @@ Foi decidido construir os principais elementos do protótipo das páginas atrav�
 ### • Burndown Sprint 2
 <br>
 
-![image](https://github.com/user-attachments/assets/00695a26-f478-4b6e-87ca-d0793db8beb3)
+![Captura de Tela (3)](https://github.com/user-attachments/assets/3765e24b-452e-4587-9c29-9c11b72faf40)
 
 <br>
 
@@ -235,6 +235,8 @@ Foi decidido construir os principais elementos do protótipo das páginas atrav�
 
 ### • Burndown Sprint 3
 <br>
+
+![Captura de Tela (2)](https://github.com/user-attachments/assets/36b29c5a-bb79-4101-9d9c-11b737511e7c)
 
 <br>
 
