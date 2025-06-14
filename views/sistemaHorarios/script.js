@@ -80,3 +80,47 @@ function exibirGrade(aulas) {
     div.innerHTML = `<strong>${div.querySelector('strong').textContent}</strong>${diasSemana[chave] || '<p>Sem aula</p>'}`;
   });
 }
+
+document.getElementById('exportar').addEventListener('click', () => {
+  
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF();
+
+  doc.setFontSize(16);
+  doc.text("Relatório de Horários", 14, 15);
+
+  
+  const dadosPDF = [];
+
+  
+  document.querySelectorAll('.semana .dia').forEach(divDia => {
+    const dia = divDia.querySelector('strong').textContent.trim();
+
+    
+    const aulas = divDia.querySelectorAll('.aula');
+
+    if (aulas.length === 0) {
+      
+      dadosPDF.push([dia, 'Sem aula', '', '', '']);
+    } else {
+      aulas.forEach(aula => {
+        const disciplina = aula.querySelector('.nome-disciplina')?.textContent || '';
+        const horario = aula.querySelector('.horario')?.textContent.replace('Horário: ', '') || '';
+        const professor = aula.querySelector('.professor')?.textContent.replace('Professor: ', '') || '';
+        const sala = aula.querySelector('.sala')?.textContent.replace('Sala: ', '') || '';
+        dadosPDF.push([dia, disciplina, horario, professor, sala]);
+      });
+    }
+  });
+
+ 
+  doc.autoTable({
+    startY: 25,
+    head: [['Dia', 'Disciplina', 'Horário', 'Professor', 'Sala']],
+    body: dadosPDF,
+    styles: { fontSize: 10 },
+    headStyles: { fillColor: [41, 128, 185] }
+  });
+
+  doc.save('horarios.pdf');
+});
