@@ -41,11 +41,11 @@ async function carregarItinerario(idSala, nomeSala) {
     itinerario.style.display = 'block';
 
     if (dados.length === 0) {
-      itinerario.innerHTML = `<h3>ITINERÁRIO - ${nomeSala}</h3><p>Nenhum dado disponível para esta sala.</p>`;
+      itinerario.innerHTML = `<h3>ITINERÁRIO</p>`;
       return;
     }
 
-    let html = `<h3>ITINERÁRIO - ${nomeSala}</h3>`;
+    let html = `<h3>ITINERÁRIO</h3>`;
     dados.forEach(item => {
       html += `
         <div class="dia">
