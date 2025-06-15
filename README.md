@@ -16,6 +16,14 @@
 
 Para estimular o aprendizado prático e a aplicação de conceitos teóricos, a FATEC de Jacareí desafiou os alunos do 1º semestre do curso de Desenvolvimento de Software Multiplataforma a desenvolverem uma aplicação web utilizando práticas modernas de gerenciamento de projetos. A proposta busca proporcionar uma experiência dinâmica, permitindo que os estudantes criem soluções inovadoras enquanto aprimoram suas habilidades no desenvolvimento de software.
 
+## 🌐 Acesso ao Sistema
+
+O projeto está hospedado na plataforma [Render](https://render.com), conforme indicado nas orientações do desafio ABP.
+
+🔗 **Link para acessar o sistema online**:  
+[https://codemasters-projeto-abp.onrender.com](https://codemasters-projeto-abp.onrender.com)
+
+
 ## SPRINTS
 
 | Sprint | Link        | Início      | Entrega     | Status |
